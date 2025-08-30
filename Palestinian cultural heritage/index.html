@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover the rich traditions, history, and culture of Palestine through food, art, architecture, and festivals.">
+  <title>Palestinian Cultural Heritage | Turathna</title>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Add font if needed -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=YourFont&display=swap" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+
+  <!-- Preload Hero Images -->
+  <link rel="preload" as="image" href="images/flag.jpg">
+  <link rel="preload" as="image" href="images/hero1.jpg">
+  <link rel="preload" as="image" href="images/hero2.jpg">
+  <link rel="preload" as="image" href="images/hero3.jpg">
+  <link rel="preload" as="image" href="images/hero4.jpg">
+  <link rel="preload" as="image" href="images/hero5.jpg">
+  <link rel="preload" as="image" href="images/hero6.jpg">
+  <link rel="preload" as="image" href="images/hero7.jpg">
+  
+  <!-- Website Icon -->
+  <link rel="icon" type="image/png" sizes="192x192" href="images/logo2.png">
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Main navigation">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo2.png" alt="Palestinian Heritage Logo" />
+            <h1 data-i18n="site-title">Turathna</h1>
+          </a>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="primary-menu">
+          <li><a href="index.html" data-i18n="home">Home</a></li>
+          <li><a href="about.html" data-i18n="about">About</a></li>
+        
+          <!-- Grouped Culture Dropdown -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-i18n="culture">Culture</a>
+            <ul class="dropdown-menu">
+              <li><a href="cuisine.html" data-i18n="cuisine">Cuisine</a></li>
+              <li><a href="art.html" data-i18n="art">Art</a></li>
+              <li><a href="embroidery.html" data-i18n="embroidery">Embroidery</a></li>
+              <li><a href="tools.html" data-i18n="tools">Tools</a></li>
+            </ul>
+          </li>
+        
+          <li><a href="buildings.html" data-i18n="buildings">Buildings</a></li>
+          <li><a href="history.html" data-i18n="history">History</a></li>
+          <li><a href="festivals.html" data-i18n="festivals">Festivals</a></li>
+          <li><a href="oral.html" data-i18n="oral">Oral Narratives</a></li>
+          <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+          <li>
+            <button id="language-toggle" class="language-toggle" aria-label="Switch language">
+              <span>العربية</span>
+            </button>
+          </li>
+        </ul>
+        
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Hero Section">
+    <div class="hero-content">
+      <h2 data-i18n="hero-title">Discover Palestinian Cultural Heritage</h2>
+      <p data-i18n="hero-text">Explore the rich traditions, art, cuisine, and history of Palestine through our comprehensive cultural archive.</p>
+      <a href="about.html" class="btn" data-i18n="learn-more">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Dynamic Hero Video Placeholder -->
+  <div class="hero-video" id="hero-video" aria-label="Hero Video" style="margin-top: 2rem;"></div>
+
+  <main class="container" id="main-content">
+    <h2 class="main-title" data-i18n="featured">Featured Cultural Aspects</h2>
+    <div class="grid">
+      
+      <!-- Cuisine -->
+      <article class="card">
+        <img src="images/cuisine.jpg" alt="Traditional Palestinian Cuisine" />
+        <div class="card-content">
+          <h3 data-i18n="cuisine-title">Traditional Cuisine</h3>
+          <p data-i18n="cuisine-text">Discover the flavors of Palestine with traditional dishes like maqluba, musakhan, and kanafeh.</p>
+          <a href="cuisine.html" data-i18n="explore">Explore Cuisine →</a>
+        </div>
+      </article>
+
+      <!-- Embroidery -->
+      <article class="card">
+        <img src="images/embroidery.jpg" alt="Palestinian Tatreez Embroidery" />
+        <div class="card-content">
+          <h3 data-i18n="embroidery-title">Tatreez Embroidery</h3>
+          <p data-i18n="embroidery-text">Learn about the intricate art of Palestinian embroidery, passed down for generations.</p>
+          <a href="embroidery.html" data-i18n="explore">Explore Embroidery →</a>
+        </div>
+      </article>
+
+      <!-- Architecture -->
+      <article class="card">
+        <img src="images/architecture.jpg" alt="Traditional Palestinian Architecture" />
+        <div class="card-content">
+          <h3 data-i18n="architecture-title">Historic Architecture</h3>
+          <p data-i18n="architecture-text">Explore unique styles like stone houses, arches, mosques, and churches.</p>
+          <a href="buildings.html" data-i18n="explore">Explore Architecture →</a>
+        </div>
+      </article>
+
+      <!-- Art -->
+      <article class="card">
+        <img src="images/art.jpg" alt="Palestinian Visual Art" />
+        <div class="card-content">
+          <h3 data-i18n="art-title">Palestinian Art</h3>
+          <p data-i18n="art-text">Experience Palestinian creativity through painting, sculpture, and street art.</p>
+          <a href="art.html" data-i18n="explore">Explore Art →</a>
+        </div>
+      </article>
+
+      <!-- Tools -->
+      <article class="card">
+        <img src="images/tools.jpg" alt="Traditional Palestinian Tools" />
+        <div class="card-content">
+          <h3 data-i18n="tools-title">Traditional Tools</h3>
+          <p data-i18n="tools-text">Discover the tools used in traditional farming and household crafts.</p>
+          <a href="tools.html" data-i18n="explore">Explore Tools →</a>
+        </div>
+      </article>
+
+      <!-- History -->
+      <article class="card">
+        <img src="images/history.jpg" alt="Historical Timeline of Palestine" />
+        <div class="card-content">
+          <h3 data-i18n="history-title">Palestinian History</h3>
+          <p data-i18n="history-text">Learn about Palestine’s history from ancient civilizations to today.</p>
+          <a href="history.html" data-i18n="explore">Explore History →</a>
+        </div>
+      </article>
+
+      <!-- Festivals -->
+      <article class="card">
+        <img src="images/festivals.jpg" alt="Palestinian Cultural Festival" />
+        <div class="card-content">
+          <h3 data-i18n="festivals-title">Cultural Festivals</h3>
+          <p data-i18n="festivals-text">Celebrate culture with music, dance, food, and community gatherings.</p>
+          <a href="festivals.html" data-i18n="explore">Explore Festivals →</a>
+        </div>
+      </article>
+	  
+	<!-- Oral Narratives -->
+<article class="card">
+  <img src="images/hero8.jpg" alt="Palestinian Oral Narratives" />
+  <div class="card-content">
+    <h3 data-i18n="oral-title">Palestinian Oral Narratives</h3>
+    <p data-i18n="oral-text">Discover the power of storytelling in preserving Palestinian identity, traditions, and history.</p>
+    <a href="oral.html" data-i18n="explore">Explore Oral Narratives →</a>
+  </div>
+</article>
+
+      
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      
+      <!-- Logos -->
+      <div class="footer-logos">
+        <a href="https://www.hebron.edu" target="_blank" rel="noopener noreferrer">
+          <img src="https://www.hebron.edu/images/stories/demo/logo-AR.png" alt="Hebron University Logo" class="footer-logo" />
+        </a>
+        <a href="https://www.irishaid.ie" target="_blank" rel="noopener noreferrer">
+          <img src="https://assets.ireland.ie/images/IrishAid_Std_White_194x80_DESKTOP.original.png" alt="Irish Aid Logo" class="footer-logo" />
+        </a>
+      </div>
+
+      <!-- Copyright -->
+      <p data-i18n="copyright">
+        &copy; 2025 Palestinian Cultural Heritage. All rights reserved.
+      </p>
+
+      <!-- Social Media -->
+      <ul class="social-links" aria-label="Social Media Links">
+        <li><a href="https://www.facebook.com/hebron.edu/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://x.com/hebronuniv?lang=en" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/hebron.edu1/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.youtube.com/@hebronuniversity3246" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  /** =======================
+   * 1. Setup: DOM Elements
+   * ======================= */
+  const heroSection = document.querySelector('.hero');
+  const languageToggle = document.getElementById('language-toggle');
+  const heroVideoContainer = document.getElementById('hero-video');
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  /** ===========================
+   * 2. Hero Image Slideshow
+   * =========================== */
+  const heroImages = [
+    'images/flag.jpg', 'images/hero1.jpg', 'images/hero2.jpg',
+    'images/hero3.jpg', 'images/hero4.jpg', 'images/hero5.jpg',
+    'images/hero6.jpg', 'images/hero7.jpg', 'images/hero8.jpg'
+  ];
+
+  // Preload images
+  heroImages.forEach(src => {
+    const img = new Image();
+    img.src = src;
+  });
+
+  let currentIndex = 0;
+  function updateHeroBackground() {
+    if (!heroSection) return;
+
+    heroSection.style.transition = 'background-image 1s ease-in-out';
+    heroSection.style.backgroundImage = `url('${heroImages[currentIndex]}')`;
+    currentIndex = (currentIndex + 1) % heroImages.length;
+
+    const nextInterval = Math.floor(Math.random() * 5000) + 10000;
+    setTimeout(updateHeroBackground, nextInterval);
+  }
+  updateHeroBackground();
+
+  /** =======================
+   * 3. Translations Object
+   * ======================= */
+  const translations = {
+    en: {
+      "site-title": "Turathna", "home": "Home", "about": "About", "cuisine": "Cuisine",
+      "art": "Art", "embroidery": "Embroidery", "tools": "Tools", "buildings": "Buildings",
+      "history": "History", "festivals": "Festivals", "contact": "Contact", "oral": "Oral Narratives", "culture": "Culture",
+      "hero-title": "Discover Palestinian Cultural Heritage",
+      "hero-text": "Explore the rich traditions, art, cuisine, and history of Palestine through our comprehensive cultural archive.",
+      "learn-more": "Learn More", "featured": "Featured Cultural Aspects",
+      "cuisine-title": "Traditional Cuisine",
+      "cuisine-text": "Discover the flavors of Palestine with our traditional dishes like maqluba, musakhan, and kanafeh.",
+      "embroidery-title": "Tatreez Embroidery",
+      "embroidery-text": "Learn about the intricate art of Palestinian embroidery, a centuries-old tradition.",
+      "architecture-title": "Architecture",
+      "architecture-text": "Explore the unique architectural styles found in Palestinian cities and villages.",
+      "art-title": "Palestinian Art",
+      "art-text": "Experience the creativity of Palestinian painters, sculptors, and street artists who reflect identity and resistance through art.",
+      "tools-title": "Traditional Tools",
+      "tools-text": "Discover the agricultural and household tools used in traditional Palestinian daily life, farming, and craftsmanship.",
+      "history-title": "Palestinian History",
+      "history-text": "Learn about the rich and complex history of Palestine, from ancient civilizations to the modern era.",
+	  "oral-title": "Palestinian Oral Narratives",
+    "oral-text": "Discover the power of storytelling in preserving Palestinian identity, traditions, and history.",
+      "festivals-title": "Cultural Festivals",
+      "festivals-text": "Celebrate Palestinian culture through vibrant festivals showcasing music, dance, food, and community spirit.",
+      "explore": "Explore →",
+      "copyright": "© 2025 Palestinian Cultural Heritage. All rights reserved."
+    },
+    ar: {
+      "site-title": "تراثنا", "home": "الرئيسية", "about": "من نحن", "cuisine": "المطبخ",
+      "art": "الفن", "embroidery": "التطريز", "tools": "الأدوات", "buildings": "المباني", "oral": "الروايات الشفوية", "culture": "التراث",
+      "history": "التاريخ", "festivals": "المهرجانات", "contact": "اتصل بنا",
+      "hero-title": "اكتشف التراث الثقافي الفلسطيني",
+      "hero-text": "استكشف التقاليد الغنية والفنون والمأكولات وتاريخ فلسطين من خلال أرشيفنا الثقافي الشامل.",
+      "learn-more": "معرفة المزيد", "featured": "الجوانب الثقافية البارزة",
+      "cuisine-title": "المأكولات التقليدية",
+      "cuisine-text": "اكتشف نكهات فلسطين مع أطباقنا التقليدية مثل المقلوبة، المسخن، والكنافة.",
+      "embroidery-title": "التطريز",
+      "embroidery-text": "تعرف على الفن المعقد للتطريز الفلسطيني، وهو تقليد عمره قرون.",
+      "architecture-title": "العمارة",
+      "architecture-text": "استكشف الأنماط المعمارية الفريدة الموجودة في المدن والقرى الفلسطينية.",
+      "art-title": "الفن الفلسطيني",
+      "art-text": "استكشف إبداع الفنانين الفلسطينيين من خلال الرسم والنحت وفن الشارع الذي يعبر عن الهوية والمقاومة.",
+      "tools-title": "الأدوات التقليدية",
+      "tools-text": "تعرف على الأدوات الزراعية والمنزلية المستخدمة في الحياة اليومية الفلسطينية التقليدية.",
+      "history-title": "التاريخ الفلسطيني",
+	      "oral-title": "الروايات الشفوية الفلسطينية",
+    "oral-text": "اكتشف قوة السرد في الحفاظ على الهوية والتقاليد والتاريخ الفلسطيني.",
+      "history-text": "تعرف على التاريخ الغني والمعقد لفلسطين، من الحضارات القديمة إلى العصر الحديث.",
+      "festivals-title": "المهرجانات الثقافية",
+      "festivals-text": "احتفل بالثقافة الفلسطينية من خلال مهرجانات نابضة بالحياة تشمل الموسيقى والرقص والطعام وروح المجتمع.",
+      "explore": "استكشف →",
+      "copyright": "© 2025 التراث الثقافي الفلسطيني. جميع الحقوق محفوظة."
+    }
+  };
+
+  /** ===========================
+   * 4. Language Handling
+   * =========================== */
+  let currentLanguage = localStorage.getItem('language') || 'en';
+
+  function updateLanguage() {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.dataset.i18n;
+      el.textContent = translations[currentLanguage][key] || key;
+    });
+
+    document.documentElement.lang = currentLanguage;
+    document.documentElement.dir = currentLanguage === 'ar' ? 'rtl' : 'ltr';
+
+    if (languageToggle) {
+      const label = currentLanguage === 'en' ? 'العربية' : 'English';
+      languageToggle.querySelector('span').textContent = label;
+    }
+
+    localStorage.setItem('language', currentLanguage);
+    updateHeroVideo();
+  }
+
+  if (languageToggle) {
+    languageToggle.addEventListener('click', () => {
+      currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+      updateLanguage();
+    });
+  }
+
+  updateLanguage(); // Initial call
+
+  /** ===============================
+   * 5. Hero YouTube Video Embed
+   * =============================== */
+  function updateHeroVideo() {
+    if (!heroVideoContainer) return;
+
+    const arabicVideoId = '_kKBeVCdwQE';
+    const englishVideoId = 'MJOs9RrGQzw';
+    const videoId = currentLanguage === 'ar' ? arabicVideoId : englishVideoId;
+
+    const iframe = `
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/${videoId}?si=YfzZoQz8GD80Xb-g"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    `;
+    heroVideoContainer.innerHTML = iframe;
+  }
+
+  /** ===============================
+   * 6. Mobile Navigation Toggle
+   * =============================== */
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!isExpanded));
+    });
+  }
+});
+</script>
+
+
+
+</body>
+</html>

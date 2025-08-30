@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palestinian Embroidery - Palestinian Cultural Heritage</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Discover the rich cultural heritage of Palestinian embroidery, known as Tatreez—a centuries-old tradition of storytelling through needle and thread." />
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Preloads -->
+  <link rel="preload" href="images/logo2.png" as="image" />
+  <link rel="preload" href="images/hero1.jpg" as="image" />
+  <link rel="preload" href="images/hero2.jpg" as="image" />
+  <link rel="preload" href="images/hero3.jpg" as="image" />
+  <link rel="preload" href="images/hero4.jpg" as="image" />
+  <link rel="preload" href="images/hero5.jpg" as="image" />
+  <link rel="preload" href="images/hero6.jpg" as="image" />
+  <link rel="preload" href="images/hero7.jpg" as="image" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Script -->
+  <script defer src="main.js"></script>
+
+  <!-- Website Icon -->
+  <link rel="icon" type="image/png" sizes="192x192" href="images/logo2.png">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Main navigation">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo2.png" alt="Palestinian Heritage Logo" />
+            <h1 data-i18n="site-title">Turathna</h1>
+          </a>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="primary-menu">
+          <li><a href="index.html" data-i18n="home">Home</a></li>
+          <li><a href="about.html" data-i18n="about">About</a></li>
+        
+          <!-- Grouped Culture Dropdown -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-i18n="culture">Culture</a>
+            <ul class="dropdown-menu">
+              <li><a href="cuisine.html" data-i18n="cuisine">Cuisine</a></li>
+              <li><a href="art.html" data-i18n="art">Art</a></li>
+              <li><a href="embroidery.html" data-i18n="embroidery">Embroidery</a></li>
+              <li><a href="tools.html" data-i18n="tools">Tools</a></li>
+            </ul>
+          </li>
+        
+          <li><a href="buildings.html" data-i18n="buildings">Buildings</a></li>
+          <li><a href="history.html" data-i18n="history">History</a></li>
+          <li><a href="festivals.html" data-i18n="festivals">Festivals</a></li>
+          <li><a href="oral.html" data-i18n="oral">Oral Narratives</a></li>
+          <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+          <li>
+            <button id="language-toggle" class="language-toggle" aria-label="Switch language">
+              <span>العربية</span>
+            </button>
+          </li>
+        </ul>
+        
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" role="banner">
+    <div class="hero-content">
+      <h2 data-i18n="embroidery-title">Tatreez: Palestinian Embroidery</h2>
+      <p data-i18n="embroidery-subtitle">A centuries-old tradition of storytelling through needle and thread</p>
+    </div>
+  </section>
+
+  <div class="hero-video" id="hero-video" aria-label="Hero Video" style="margin-top: 2rem;">
+    <!-- Dynamic video content will be inserted here -->
+  </div>
+
+  <main class="container" id="main-content">
+    <h2 class="main-title" data-i18n="art-title">The Art of Tatreez</h2>
+    <div class="grid">
+
+      <!-- Card 1 -->
+      <a class="card-link" data-link-en="https://en.wikipedia.org/wiki/Palestinian_Thobe" data-link-ar="https://ar.wikipedia.org/wiki/زي_تقليدي_فلسطيني" target="_blank" rel="noopener noreferrer">
+        <article class="card">
+          <img src="images/thobe.jpg" alt="Traditional Palestinian Thobe" loading="lazy" />
+          <div class="card-content">
+            <h3 data-i18n="thobe">The Thobe</h3>
+            <p data-i18n="thobe-desc">The traditional Palestinian dress, often heavily embroidered with regional patterns.</p>
+          </div>
+        </article>
+      </a>
+
+      <!-- Card 2 -->
+      <a class="card-link" data-link-en="https://www.arabizitranslations.com/blog/infographic-fun-palestinian-embroidery-part-1" data-link-ar="https://ar.wikipedia.org/wiki/زي_تقليدي_فلسطيني" target="_blank" rel="noopener noreferrer">
+        <article class="card">
+          <img src="images/patterns.jpeg" alt="Regional Embroidery Patterns" loading="lazy" />
+          <div class="card-content">
+            <h3 data-i18n="patterns">Regional Patterns</h3>
+            <p data-i18n="patterns-desc">Each Palestinian region developed distinct embroidery motifs and color schemes.</p>
+          </div>
+        </article>
+      </a>
+
+      <!-- Card 3 -->
+      <a class="card-link" data-link-en="https://en.wikipedia.org/wiki/Tatreez" data-link-ar="https://ar.wikipedia.org/wiki/تطريز_فلسطيني" target="_blank" rel="noopener noreferrer">
+        <article class="card">
+          <img src="images/symbols.png" alt="Embroidery Symbolism" loading="lazy" />
+          <div class="card-content">
+            <h3 data-i18n="symbols">Symbolism</h3>
+            <p data-i18n="symbols-desc">Common motifs include cypress trees (strength), flowers (prosperity), and geometric patterns.</p>
+          </div>
+        </article>
+      </a>
+
+      <!-- Card 4 -->
+      <a class="card-link" data-link-en="https://en.wikipedia.org/wiki/Embroidery" data-link-ar="https://ar.wikipedia.org/wiki/تطريز" target="_blank" rel="noopener noreferrer">
+        <article class="card">
+          <img src="images/modern.jpg" alt="Modern Tatreez" loading="lazy" />
+          <div class="card-content">
+            <h3 data-i18n="modern">Contemporary Adaptations</h3>
+            <p data-i18n="modern-desc">Traditional tatreez adapted to modern fashion and accessories.</p>
+          </div>
+        </article>
+      </a>
+
+      <!-- Card 5 -->
+      <a class="card-link" data-link-en="https://www.youtube.com/playlist?list=PLEwhAbz0NAFxk71-bNepFJJOA0M0XOH-d" data-link-ar="https://www.youtube.com/playlist?list=PLEwhAbz0NAFxk71-bNepFJJOA0M0XOH-d" target="_blank" rel="noopener noreferrer">
+        <article class="card">
+          <img src="images/process.jpg" alt="Tatreez Process" loading="lazy" />
+          <div class="card-content">
+            <h3 data-i18n="process">The Process</h3>
+            <p data-i18n="process-desc">Traditionally done by hand with silk thread on linen or cotton fabric.</p>
+          </div>
+        </article>
+      </a>
+
+      <!-- Card 6 -->
+      <a class="card-link" data-link-en="https://www.metmuseum.org/perspectives/tatreez-in-time" data-link-ar="https://www.aljazeera.net/culture/2016/10/20/التطريز-الفلسطيني-فن-شعبي-ورمز-للهوية" target="_blank" rel="noopener noreferrer">
+        <article class="card">
+          <img src="images/revival.jpg" alt="Tatreez Revival Movement" loading="lazy" />
+          <div class="card-content">
+            <h3 data-i18n="revival">Cultural Revival</h3>
+            <p data-i18n="revival-desc">Efforts to preserve and teach tatreez to new generations.</p>
+          </div>
+        </article>
+      </a>
+
+    </div>
+
+    <h2 class="main-title" data-i18n="tradition-title">A Living Tradition</h2>
+    <p data-i18n="tradition-text1">
+      Palestinian embroidery, known as tatreez, is more than decorative needlework—it's a visual language that communicates identity, heritage, and personal stories...
+    </p>
+    <p data-i18n="tradition-text2">
+      The colors and motifs used in tatreez carry deep symbolism...
+    </p>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+
+      <!-- Logos Section -->
+      <div class="footer-logos">
+        <a href="https://www.hebron.edu" target="_blank" rel="noopener noreferrer">
+          <img src="https://www.hebron.edu/images/stories/demo/logo-AR.png" alt="Hebron University Logo" class="footer-logo">
+        </a>
+        <a href="https://www.irishaid.ie" target="_blank" rel="noopener noreferrer">
+          <img src="https://assets.ireland.ie/images/IrishAid_Std_White_194x80_DESKTOP.original.png" alt="Irish Aid Logo" class="footer-logo">
+        </a>
+      </div>
+
+      <!-- Copyright -->
+      <p data-i18n="copyright">
+        &copy; 2025 Palestinian Cultural Heritage. All rights reserved.
+      </p>
+
+      <!-- Social Media Links -->
+      <ul class="social-links" aria-label="Social Media Links">
+        <li><a href="https://www.facebook.com/hebron.edu/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://x.com/hebronuniv?lang=en" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/hebron.edu1/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.youtube.com/@hebronuniversity3246" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script>
+    const translations = {
+          en: {
+            "site-title": "Turathna",
+            "home": "Home",
+            "about": "About",
+            "cuisine": "Cuisine",
+            "art": "Art",
+            "embroidery": "Embroidery",
+            "tools": "Tools",
+            "buildings": "Buildings",
+            "history": "History",
+            "culture": "Culture",
+            "festivals": "Festivals",
+            "oral": "Oral Narratives",
+            "contact": "Contact",
+            "embroidery-title": "Tatreez: Palestinian Embroidery",
+            "embroidery-subtitle": "A centuries-old tradition of storytelling through needle and thread",
+            "art-title": "The Art of Tatreez",
+            "thobe": "The Thobe",
+            "thobe-desc": "The traditional Palestinian dress, often heavily embroidered with regional patterns.",
+            "patterns": "Regional Patterns",
+            "patterns-desc": "Each Palestinian region developed distinct embroidery motifs and color schemes.",
+            "symbols": "Symbolism",
+            "symbols-desc": "Common motifs include cypress trees (strength), flowers (prosperity), and geometric patterns.",
+            "modern": "Contemporary Adaptations",
+            "modern-desc": "Traditional tatreez adapted to modern fashion and accessories.",
+            "process": "The Process",
+            "process-desc": "Traditionally done by hand with silk thread on linen or cotton fabric.",
+            "revival": "Cultural Revival",
+            "revival-desc": "Efforts to preserve and teach tatreez to new generations.",
+            "tradition-title": "A Living Tradition",
+            "tradition-text1": "Palestinian embroidery, known as tatreez, is more than decorative needlework - it's a visual language that communicates identity, heritage, and personal stories. Traditionally, Palestinian women would embroider their thobes (dresses) with patterns specific to their village or region, making each garment a unique representation of its wearer's origins.",
+            "tradition-text2": "The colors and motifs used in tatreez carry deep symbolism. Red thread often dominates, representing vitality and protection, while common patterns like the 'cypress tree' symbolize resilience. In recent decades, tatreez has experienced a revival as both a cultural practice and a symbol of Palestinian identity, with contemporary artists and designers incorporating traditional motifs into modern fashion and art.",
+            "copyright": "© 2025 Palestinian Cultural Heritage. All rights reserved."
+          },
+          ar: {
+            "site-title": "تراثنا",
+            "home": "الرئيسية",
+            "about": "من نحن",
+            "cuisine": "المطبخ",
+            "art": "الفن",
+            "embroidery": "التطريز",
+            "tools": "الأدوات",
+            "culture": "التراث",
+            "buildings": "المباني",
+            "history": "التاريخ",
+            "festivals": "المهرجانات",
+            "contact": "اتصل بنا",
+            "oral": "الروايات الشفوية",
+            "embroidery-title": "التطريز",
+            "embroidery-subtitle": "تقليد عمره قرون لسرد القصص بالإبرة والخيط",
+            "art-title": "فن التطريز",
+            "thobe": "الثوب",
+            "thobe-desc": "الزي الفلسطيني التقليدي، غالبًا ما يكون مطرزًا بأنماط إقليمية.",
+            "patterns": "أنماط إقليمية",
+            "patterns-desc": "طورت كل منطقة فلسطينية زخارف وألوان تطريز مميزة.",
+            "symbols": "الرمزية",
+            "symbols-desc": "تشمل الزخارف الشائعة أشجار السرو (القوة)، والزهور (الازدهار)، والأنماط الهندسية.",
+            "modern": "التكيفات المعاصرة",
+            "modern-desc": "تم تكييف التطريز التقليدي لمواكبة الموضة والإكسسوارات الحديثة.",
+            "process": "العملية",
+            "process-desc": "يتم إجراؤه تقليديًا يدويًا بخيط الحرير على قماش الكتان أو القطن.",
+            "revival": "إحياء ثقافي",
+            "revival-desc": "جهود للحفاظ على التطريز وتعليمه للأجيال الجديدة.",
+            "tradition-title": "تقليد حي",
+            "tradition-text1": "التطريز الفلسطيني، المعروف باسم التطريز، هو أكثر من مجرد أعمال إبرة زخرفية - إنه لغة بصرية تنقل الهوية والتراث والقصص الشخصية. تقليديًا، كانت النساء الفلسطينيات يطرزن أثوابهن (فساتين) بأنماط خاصة بقريتهن أو منطقتهن، مما يجعل كل قطعة تمثيلاً فريدًا لأصول مرتديها.",
+            "tradition-text2": "تحمل الألوان والزخارف المستخدمة في التطريز رمزية عميقة. غالبًا ما يهيمن الخيط الأحمر، الذي يمثل الحيوية والحماية، بينما ترمز الأنماط الشائعة مثل 'شجرة السرو' إلى المرونة. في العقود الأخيرة، شهد التطريز إحياءً كممارسة ثقافية ورمز للهوية الفلسطينية، حيث قام الفنانون والمصممون المعاصرون بدمج الزخارف التقليدية في الموضة والفن الحديث.",
+            "copyright": "© 2025 التراث الثقافي الفلسطيني. جميع الحقوق محفوظة."
+          }
+        };
+      
+      const languageToggle = document.getElementById('language-toggle');
+      const heroSection = document.querySelector('.hero');
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+    
+      let currentLanguage = localStorage.getItem('language') || 'en';
+      localStorage.setItem('language', currentLanguage);
+    
+      const heroImages = [
+        'images/flag.jpg', 'images/hero1.jpg', 'images/hero2.jpg',
+        'images/hero3.jpg', 'images/hero4.jpg', 'images/hero5.jpg',
+        'images/hero6.jpg', 'images/hero7.jpg', 'images/hero8.jpg'
+      ];
+      let currentIndex = 0;
+    
+      function updateHeroBackground() {
+        if (heroSection) {
+          heroSection.style.backgroundImage = `url('${heroImages[currentIndex]}')`;
+          currentIndex = (currentIndex + 1) % heroImages.length;
+          const nextInterval = Math.floor(Math.random() * 5000) + 10000;
+          setTimeout(updateHeroBackground, nextInterval);
+        }
+      }
+    
+      function updateHeroVideo() {
+        const heroVideoContainer = document.getElementById('hero-video');
+        if (!heroVideoContainer) return;
+    
+        const arabicVideoId = 'e7ZDthDWgZA';
+        const englishVideoId = 'xBydjxu_DDc';
+        const videoId = currentLanguage === 'ar' ? arabicVideoId : englishVideoId;
+    
+        heroVideoContainer.innerHTML = `
+          <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/${videoId}?si=YfzZoQz8GD80Xb-g"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        `;
+      }
+    
+      function updateLanguage() {
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+          const key = el.dataset.i18n;
+          el.textContent = translations[currentLanguage]?.[key] || key;
+        });
+    
+        document.documentElement.lang = currentLanguage;
+        document.documentElement.dir = currentLanguage === 'ar' ? 'rtl' : 'ltr';
+    
+        if (languageToggle) {
+          const span = languageToggle.querySelector('span');
+          if (span) {
+            span.textContent = currentLanguage === 'en' ? 'العربية' : 'English';
+          }
+        }
+    
+        localStorage.setItem('language', currentLanguage);
+        updateHeroVideo();
+        updateCardLinks();
+      }
+    
+      function updateCardLinks() {
+        document.querySelectorAll('.card-link').forEach(link => {
+          const newHref = link.getAttribute(`data-link-${currentLanguage}`);
+          if (newHref) {
+            link.href = newHref;
+          }
+        });
+      }
+    
+      if (languageToggle) {
+        languageToggle.addEventListener('click', () => {
+          currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+          updateLanguage();
+        });
+      }
+    
+      if (hamburger && navLinks) {
+        hamburger.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+          const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+          hamburger.setAttribute('aria-expanded', String(!isExpanded));
+        });
+      }
+    
+      updateLanguage();
+      updateHeroBackground();
+    </script>    
+</body>
+</html>
