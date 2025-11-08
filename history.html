@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palestinian History - Palestinian Cultural Heritage</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Explore the rich and enduring history of Palestinian civilization from ancient times to the modern era." />
+  <meta name="keywords" content="Palestinian History, Canaanite, Philistine, Roman, Islamic, Crusader, Ottoman, Heritage" />
+  <meta name="author" content="Palestinian Cultural Heritage" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Font & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha384-VhEihIklCZFfRhB2F12xR7zU7sM3P1N9yO+l5j6i3d3P4NVgC1EZRY93fQ3rLwZx" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+
+  <!-- Preload Hero Images for LCP -->
+  <link rel="preload" as="image" href="images/hero1.jpg" />
+  <link rel="preload" as="image" href="images/hero2.jpg" />
+  <link rel="preload" as="image" href="images/hero3.jpg" />
+  <link rel="preload" as="image" href="images/hero4.jpg" />
+  <link rel="preload" as="image" href="images/hero5.jpg" />
+  <link rel="preload" as="image" href="images/hero6.jpg" />
+  <link rel="preload" as="image" href="images/hero7.jpg" />
+  <link rel="preload" as="image" href="images/ضياء احمد اخليل.png" />
+  <link rel="preload" as="image" href="images/اخلاء مسؤولية.png" />
+
+    <!-- Website Icon -->
+  <link rel="icon" type="image/png" sizes="192x192" href="images/logo2.png">
+</head>
+
+<body>
+  <header role="banner">
+    <div class="container">
+      <nav aria-label="Main Navigation">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo2.png" alt="Palestinian Heritage Logo" />
+            <h1 data-i18n="site-title">Turathna</h1>
+          </a>
+        </div>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navigation-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navigation-menu" role="menubar">
+          <li role="none"><a role="menuitem" href="index.html" data-i18n="home">Home</a></li>
+          <li role="none"><a role="menuitem" href="about.html" data-i18n="about">About</a></li>
+        
+          <!-- Culture dropdown inserted here -->
+          <li role="none" class="dropdown" aria-haspopup="true">
+            <a role="menuitem" href="#" class="dropdown-toggle" aria-expanded="false">Culture</a>
+            <ul class="dropdown-menu" role="menu">
+              <li role="none"><a role="menuitem" href="cuisine.html" data-i18n="cuisine">Cuisine</a></li>
+              <li role="none"><a role="menuitem" href="art.html" data-i18n="art">Art</a></li>
+              <li role="none"><a role="menuitem" href="embroidery.html" data-i18n="embroidery">Embroidery</a></li>
+              <li role="none"><a role="menuitem" href="tools.html" data-i18n="tools">Tools</a></li>
+            </ul>
+          </li>
+        
+          <li role="none"><a role="menuitem" href="buildings.html" data-i18n="buildings">Buildings</a></li>
+          <li role="none"><a role="menuitem" href="history.html" data-i18n="history" aria-current="page">History</a></li>
+          <li role="none"><a role="menuitem" href="festivals.html" data-i18n="festivals">Festivals</a></li>
+          <li role="none"><a role="menuitem" href="oral.html" data-i18n="oral">Oral Narratives</a></li>
+          <li role="none"><a role="menuitem" href="contact.html" data-i18n="contact">Contact</a></li>
+          <li role="none">
+            <button id="language-toggle" class="language-toggle" aria-label="Switch language">
+              <span>العربية</span>
+            </button>
+          </li>
+        </ul>
+        
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Hero Section">
+    <div class="hero-content">
+      <h2 data-i18n="historyTitle">Palestinian History</h2>
+      <p data-i18n="historySubtitle">A land of ancient civilizations and enduring culture</p>
+    </div>
+  </section>
+
+  <div class="hero-video" id="hero-video" aria-label="Hero Video" style="margin-top: 2rem;"></div>
+
+  <main class="container" role="main">
+    <section aria-labelledby="timelineTitle">
+      <h2 id="timelineTitle" class="main-title" data-i18n="timelineTitle">Historical Timeline</h2>
+      <div class="history-points">
+        <!-- Repeatable Timeline Blocks -->
+        <article class="history-item">
+          <h3>
+            <a class="card-link" href="https://en.wikipedia.org/wiki/Canaan" data-link-en="https://en.wikipedia.org/wiki/Canaan" data-link-ar="https://ar.wikipedia.org/wiki/كنعانيون" target="_blank" rel="noopener noreferrer">
+              <span data-i18n="canaaniteTitle">• Canaanite Period</span>
+            </a>
+          </h3>
+          <p data-i18n="canaaniteDesc">The Bronze Age origins of Palestinian civilization (3000–1200 BCE).</p>
+        </article>
+
+        <article class="history-item">
+          <h3>
+            <a class="card-link" href="https://en.wikipedia.org/wiki/Philistines" data-link-en="https://en.wikipedia.org/wiki/Philistines" data-link-ar="https://ar.wikipedia.org/wiki/فلستيون" target="_blank" rel="noopener noreferrer" data-i18n="philistineTitle">
+              • Philistine Era
+            </a>
+          </h3>
+          <p data-i18n="philistineDesc">The coastal civilization that gave Palestine its name (1200–600 BCE).</p>
+        </article>
+
+        <article class="history-item">
+          <h3>
+            <a class="card-link" href="https://en.wikipedia.org/wiki/Roman_Empire" data-link-en="https://en.wikipedia.org/wiki/Roman_Empire" data-link-ar="https://ar.wikipedia.org/wiki/الإمبراطورية_الرومانية" target="_blank" rel="noopener noreferrer" data-i18n="romanTitle">
+              • Roman Rule
+            </a>
+          </h3>
+          <p data-i18n="romanDesc">From Pompey's conquest to the Byzantine era (63 BCE–636 CE).</p>
+        </article>
+
+        <article class="history-item">
+          <h3>
+            <a class="card-link" href="https://en.wikipedia.org/wiki/Caliphate" data-link-en="https://en.wikipedia.org/wiki/Caliphate" data-link-ar="https://ar.wikipedia.org/wiki/خلافة_إسلامية" target="_blank" rel="noopener noreferrer" data-i18n="islamicTitle">
+              • Islamic Caliphates
+            </a>
+          </h3>
+          <p data-i18n="islamicDesc">Arab Muslim rule beginning in the 7th century.</p>
+        </article>
+
+        <article class="history-item">
+          <h3>
+            <a class="card-link" href="https://en.wikipedia.org/wiki/Crusader_states" data-link-en="https://en.wikipedia.org/wiki/Crusader_states" data-link-ar="https://ar.wikipedia.org/wiki/الدول_الصليبية" target="_blank" rel="noopener noreferrer" data-i18n="crusaderTitle">
+              • Crusader Kingdoms
+            </a>
+          </h3>
+          <p data-i18n="crusaderDesc">European Christian rule (1099–1291) and its legacy.</p>
+        </article>
+
+        <article class="history-item">
+          <h3>
+            <a class="card-link" href="https://en.wikipedia.org/wiki/Ottoman_Empire" data-link-en="https://en.wikipedia.org/wiki/Ottoman_Empire" data-link-ar="https://ar.wikipedia.org/wiki/الدولة_العثمانية" target="_blank" rel="noopener noreferrer" data-i18n="ottomanTitle">
+              • Ottoman Era
+            </a>
+          </h3>
+          <p data-i18n="ottomanDesc">Four centuries of Ottoman rule (1516–1917).</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="culturalTitle">
+      <h2 id="culturalTitle" class="main-title" data-i18n="culturalTitle">Cultural Continuity</h2>
+      <p data-i18n="culturalP1">Despite numerous conquests and rulers throughout history, Palestinian culture has demonstrated remarkable continuity...</p>
+      <p data-i18n="culturalP2">The 20th century brought dramatic changes with the Nakba (catastrophe) of 1948...</p>
+    </section>
+  </main>
+
+   <footer>
+    <div class="container footer-content">
+
+      <!-- Logos -->
+      <div class="footer-logos">
+        <a href="https://www.hebron.edu" target="_blank" rel="noopener noreferrer">
+          <img src="https://www.hebron.edu/images/stories/demo/logo-AR.png" alt="Hebron University Logo"
+            class="footer-logo" />
+        </a>
+        <a href="https://www.irishaid.ie" target="_blank" rel="noopener noreferrer">
+          <img src="https://assets.ireland.ie/images/IrishAid_Std_White_194x80_DESKTOP.original.png"
+            alt="Irish Aid Logo" class="footer-logo" />
+        </a>
+      </div>
+
+      <!-- Project Credit (New: Added from poster/project details) -->
+      <p class="project-credit" data-i18n="project-credit">
+        Part of the Empowering Journalists in Digital Media to Promote and Safeguard Palestinian Cultural Heritage project, funded by Irish Aid.
+      </p>
+
+      <!-- Disclaimer -->
+      <p class="disclaimer" data-i18n="disclaimer">
+        The video does not necessarily reflect the views of the donor.
+      </p>
+
+      <!-- Copyright -->
+      <p data-i18n="copyright">
+        &copy; 2025 Palestinian Cultural Heritage. All rights reserved.
+      </p>
+
+      <!-- Social Media -->
+      <ul class="social-links" aria-label="Social Media Links">
+        <li><a href="https://www.facebook.com/hebron.edu/" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-facebook"></i></a></li>
+        <li><a href="https://x.com/hebronuniv?lang=en" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/hebron.edu1/" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.youtube.com/@hebronuniversity3246" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-youtube"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Deferred JavaScript -->
+  <script defer>
+    const preloadImages = [
+      'images/hero1.jpg', 'images/hero2.jpg', 'images/hero3.jpg',
+      'images/hero4.jpg', 'images/hero5.jpg', 'images/hero6.jpg', 'images/hero7.jpg'
+    ];
+    preloadImages.forEach(src => {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = src;
+      document.head.appendChild(link);
+    });
+  </script>
+  <!-- Scripts -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const heroSection = document.querySelector('.hero');
+  const heroImages = [
+        'images/flag.jpg', 'images/hero1.jpg', 'images/hero2.jpg',
+        'images/hero3.jpg', 'images/hero4.jpg', 'images/hero5.jpg',
+        'images/hero6.jpg', 'images/hero7.jpg', 'images/hero8.jpg',
+        'images/ضياء احمد اخليل.png', 'images/اخلاء مسؤولية.png'
+      ];
+  let currentIndex = 0;
+
+  function updateHeroBackgroundImage() {
+    if (!heroSection) return;
+    heroSection.style.backgroundImage = `url('${heroImages[currentIndex]}')`;
+    currentIndex = (currentIndex + 1) % heroImages.length;
+    const nextInterval = Math.floor(Math.random() * 5000) + 10000;
+    setTimeout(updateHeroBackgroundImage, nextInterval);
+  }
+
+  updateHeroBackgroundImage();
+
+  const languageToggle = document.getElementById('language-toggle');
+  let currentLanguage = localStorage.getItem('language') || 'en';
+
+  const translations = {
+    en: {
+      "site-title": "Turathna",
+      "home": "Home",
+      "about": "About",
+      "cuisine": "Cuisine",
+      "art": "Art",
+      "embroidery": "Embroidery",
+      "tools": "Tools",
+      "buildings": "Buildings",
+      "history": "History",
+      "festivals": "Festivals",
+      "contact": "Contact",
+      "oral": "Oral Narratives",
+      "culture": "Culture",
+      "historyTitle": "Palestinian History",
+      "historySubtitle": "A land of ancient civilizations and enduring culture",
+      "timelineTitle": "Historical Timeline",
+      "canaaniteTitle": "Canaanite Period",
+      "canaaniteDesc": "The Bronze Age origins of Palestinian civilization (3000–1200 BCE).",
+      "philistineTitle": "Philistine Era",
+      "philistineDesc": "The coastal civilization that gave Palestine its name (1200–600 BCE).",
+      "romanTitle": "Roman Rule",
+      "romanDesc": "From Pompey's conquest to the Byzantine era (63 BCE–636 CE).",
+      "islamicTitle": "Islamic Caliphates",
+      "islamicDesc": "Arab Muslim rule beginning in the 7th century.",
+      "crusaderTitle": "Crusader Kingdoms",
+      "crusaderDesc": "European Christian rule (1099–1291) and its legacy.",
+      "ottomanTitle": "Ottoman Era",
+      "ottomanDesc": "Four centuries of Ottoman rule (1516–1917).",
+      "more": "More",
+      "culturalTitle": "Cultural Continuity",
+      "culturalP1": "Despite numerous conquests and rulers throughout history, Palestinian culture has demonstrated remarkable continuity...",
+      "culturalP2": "The 20th century brought dramatic changes with the Nakba (catastrophe) of 1948...",
+                                           "project-credit": "Part of the Empowering Journalists in Digital Media to Promote and Safeguard Palestinian Cultural Heritage project, funded by Irish Aid.",
+	  "disclaimer": "The video does not necessarily reflect the views of the donor.",
+      "copyright": "© 2025 Palestinian Cultural Heritage. All rights reserved."
+    },
+    ar: {
+      "site-title": "تراثنا",
+      "home": "الرئيسية",
+      "about": "من نحن",
+      "cuisine": "المطبخ",
+      "culture": "التراث",
+      "art": "الفن",
+      "embroidery": "التطريز",
+      "tools": "الأدوات",
+      "buildings": "المباني",
+      "history": "التاريخ",
+      "festivals": "المهرجانات",
+      "contact": "اتصل بنا",
+      "oral": "الروايات الشفوية",
+      "historyTitle": "التاريخ الفلسطيني",
+      "historySubtitle": "أرض الحضارات القديمة والثقافة الدائمة",
+      "timelineTitle": "الخط الزمني التاريخي",
+      "canaaniteTitle": "الفترة الكنعانية",
+      "canaaniteDesc": "أصول الحضارة الفلسطينية في العصر البرونزي (3000–1200 قبل الميلاد).",
+      "philistineTitle": "العصر الفلسطيني",
+      "philistineDesc": "الحضارة الساحلية التي أعطت فلسطين اسمها (1200–600 قبل الميلاد).",
+      "romanTitle": "الحكم الروماني",
+      "romanDesc": "من غزو بومبي إلى العصر البيزنطي (63 ق.م – 636 م).",
+      "islamicTitle": "الخلافات الإسلامية",
+      "islamicDesc": "الحكم الإسلامي العربي الذي بدأ في القرن السابع.",
+      "crusaderTitle": "ممالك الصليبيين",
+      "crusaderDesc": "الحكم المسيحي الأوروبي (1099–1291) وإرثه.",
+      "ottomanTitle": "العهد العثماني",
+      "ottomanDesc": "أربعة قرون من الحكم العثماني (1516–1917).",
+      "more": "المزيد",
+      "culturalTitle": "استمرارية الثقافة",
+      "culturalP1": "على الرغم من الغزوات العديدة والحكام المتعاقبين، أظهرت الثقافة الفلسطينية استمرارية ملحوظة...",
+      "culturalP2": "جلب القرن العشرون تغييرات جذرية مع النكبة عام 1948...",
+                                                      "project-credit": "جزء من مشروع تمكين الصحفيين في الإعلام الرقمي لتعزيز وحماية التراث الثقافي الفلسطيني، ممول من قبل Irish Aid.",
+
+	  "disclaimer": "الفيديو لا يعكس بالضرورة وجهة نظر المتبرع.",
+      "copyright": "© 2025 التراث الثقافي الفلسطيني. جميع الحقوق محفوظة."
+    }
+  };
+
+  function updateCardLinks() {
+    document.querySelectorAll('.card-link').forEach(link => {
+      const href = currentLanguage === 'ar' ? link.dataset.linkAr : link.dataset.linkEn;
+      if (href) link.href = href;
+    });
+  }
+
+  function updateHeroVideoEmbed() {
+    const heroVideoContainer = document.getElementById('hero-video');
+    if (!heroVideoContainer) return;
+
+    const arabicVideoId = 'f0oy-NicIgE';
+    const englishVideoId = 'QUCeQt8zg5o';
+    const videoId = currentLanguage === 'ar' ? arabicVideoId : englishVideoId;
+
+    heroVideoContainer.innerHTML = `
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/${videoId}?si=YfzZoQz8GD80Xb-g"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    `;
+  }
+
+  function updateLanguage() {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.dataset.i18n;
+      el.textContent = translations[currentLanguage][key] || key;
+    });
+
+    document.documentElement.lang = currentLanguage;
+    document.documentElement.dir = currentLanguage === 'ar' ? 'rtl' : 'ltr';
+
+    if (languageToggle) {
+      const label = currentLanguage === 'en' ? 'العربية' : 'English';
+      const span = languageToggle.querySelector('span');
+      if (span) span.textContent = label;
+    }
+
+    localStorage.setItem('language', currentLanguage);
+    updateHeroVideoEmbed();
+    updateCardLinks();
+  }
+
+  if (languageToggle) {
+    languageToggle.addEventListener('click', () => {
+      currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+      updateLanguage();
+    });
+  }
+
+  updateLanguage();
+
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!isExpanded));
+    });
+  }
+});
+</script>
+</body>
+</html>

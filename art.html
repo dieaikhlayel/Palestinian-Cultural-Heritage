@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Explore Palestinian art—calligraphy, iconography, ceramics, and contemporary expressions rooted in heritage." />
+  <meta name="keywords"
+    content="Palestinian art, Islamic calligraphy, iconography, contemporary art, ceramics, woodwork, heritage, culture" />
+  <meta name="author" content="Palestinian Cultural Heritage" />
+  <title>Palestinian Art - Palestinian Cultural Heritage</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="preload" as="image" href="images/hero1.jpg" />
+  <link rel="preload" as="image" href="images/hero2.jpg" />
+  <link rel="preload" as="image" href="images/hero3.jpg" />
+  <link rel="preload" as="image" href="images/hero4.jpg" />
+  <link rel="preload" as="image" href="images/hero5.jpg" />
+  <link rel="preload" as="image" href="images/hero6.jpg" />
+  <link rel="preload" as="image" href="images/hero7.jpg" />
+  <link rel="preload" as="image" href="images/ضياء احمد اخليل.png" />
+  <link rel="preload" as="image" href="images/اخلاء مسؤولية.png" />
+
+
+  <!-- Website Icon -->
+  <link rel="icon" type="image/png" sizes="192x192" href="images/logo2.png">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Main navigation">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo2.png" alt="Palestinian Heritage Logo" />
+            <h1 data-i18n="site-title">Turathna</h1>
+          </a>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"
+          aria-controls="primary-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="primary-menu">
+          <li><a href="index.html" data-i18n="home">Home</a></li>
+          <li><a href="about.html" data-i18n="about">About</a></li>
+
+          <!-- Grouped Culture Dropdown -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-i18n="culture">Culture</a>
+            <ul class="dropdown-menu">
+              <li><a href="cuisine.html" data-i18n="cuisine">Cuisine</a></li>
+              <li><a href="art.html" data-i18n="art">Art</a></li>
+              <li><a href="embroidery.html" data-i18n="embroidery">Embroidery</a></li>
+              <li><a href="tools.html" data-i18n="tools">Tools</a></li>
+            </ul>
+          </li>
+
+          <li><a href="buildings.html" data-i18n="buildings">Buildings</a></li>
+          <li><a href="history.html" data-i18n="history">History</a></li>
+          <li><a href="festivals.html" data-i18n="festivals">Festivals</a></li>
+          <li><a href="oral.html" data-i18n="oral">Oral Narratives</a></li>
+          <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+          <li>
+            <button id="language-toggle" class="language-toggle" aria-label="Switch language">
+              <span>العربية</span>
+            </button>
+          </li>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" role="banner" aria-label="Hero Section">
+    <div class="hero-content">
+      <h2 data-i18n="art-title">Palestinian Art</h2>
+      <p data-i18n="art-subtitle">Expressions of identity, resistance, and beauty</p>
+    </div>
+  </section>
+
+  <div class="hero-video" id="hero-video" role="region" aria-label="Hero Video" style="margin-top: 2rem;">
+    <!-- Language-based video iframe inserted by JS -->
+  </div>
+
+  <main class="container" role="main">
+    <section aria-labelledby="art-types">
+      <h2 class="main-title" id="art-types" data-i18n="art-types-title">Traditional and Contemporary Palestinian Art
+      </h2>
+      <div class="grid">
+        <a class="card-link" role="link" aria-label="Islamic Calligraphy"
+          data-link-en="https://en.wikipedia.org/wiki/Islamic_calligraphy"
+          data-link-ar="https://ar.wikipedia.org/wiki/خط_عربي" target="_blank" rel="noopener noreferrer">
+          <article class="card">
+            <img src="images/calligraphy.jpg" alt="Islamic Calligraphy" />
+            <div class="card-content">
+              <h3 data-i18n="calligraphy">Islamic Calligraphy</h3>
+              <p data-i18n="calligraphy-desc">The sacred art of Arabic calligraphy has flourished in Palestine for
+                centuries.</p>
+            </div>
+          </article>
+        </a>
+
+        <a class="card-link" role="link" aria-label="Christian Iconography"
+          data-link-en="https://en.wikipedia.org/wiki/Christian_art"
+          data-link-ar="https://ar.wikipedia.org/wiki/فن_مسيحي" target="_blank" rel="noopener noreferrer">
+          <article class="card">
+            <img src="images/iconography.jpg" alt="Christian Iconography" />
+            <div class="card-content">
+              <h3 data-i18n="iconography">Christian Iconography</h3>
+              <p data-i18n="iconography-desc">Palestine's Christian communities have preserved ancient icon painting
+                traditions.</p>
+            </div>
+          </article>
+        </a>
+
+        <a class="card-link" role="link" aria-label="Contemporary Art"
+          data-link-en="https://en.wikipedia.org/wiki/Contemporary_Palestinian_art"
+          data-link-ar="https://ar.wikipedia.org/wiki/الفن_الفلسطيني_المعاصر" target="_blank" rel="noopener noreferrer">
+          <article class="card">
+            <img src="images/contemporary.jpg" alt="Contemporary Art" />
+            <div class="card-content">
+              <h3 data-i18n="contemporary">Contemporary Art</h3>
+              <p data-i18n="contemporary-desc">Modern Palestinian artists blend traditional motifs with contemporary
+                themes.</p>
+            </div>
+          </article>
+        </a>
+
+        <a class="card-link" role="link" aria-label="Street Art"
+          data-link-en="https://en.wikipedia.org/wiki/West_Bank_Wall_graffiti_art"
+          data-link-ar="https://ar.wikipedia.org/wiki/فن_الكتابة_على_الجدران_في_الضفة_الغربية" target="_blank"
+          rel="noopener noreferrer">
+          <article class="card">
+            <img src="images/street-art.jpg" alt="Street Art in Palestine" />
+            <div class="card-content">
+              <h3 data-i18n="street-art">Street Art</h3>
+              <p data-i18n="street-art-desc">Murals and graffiti have become powerful tools of expression in Palestine.
+              </p>
+            </div>
+          </article>
+        </a>
+
+        <a class="card-link" role="link" aria-label="Ceramics"
+          data-link-en="https://en.wikipedia.org/wiki/Palestinian_handicrafts"
+          data-link-ar="https://ar.wikipedia.org/wiki/الحرف_اليدوية_الفلسطينية" target="_blank"
+          rel="noopener noreferrer">
+          <article class="card">
+            <img src="images/ceramics.jpg" alt="Hebron Ceramics" />
+            <div class="card-content">
+              <h3 data-i18n="ceramics">Ceramics</h3>
+              <p data-i18n="ceramics-desc">Hebron's distinctive blue pottery and other ceramic traditions.</p>
+            </div>
+          </article>
+        </a>
+
+        <a class="card-link" role="link" aria-label="Woodwork"
+          data-link-en="https://en.wikipedia.org/wiki/Palestinian_handicrafts"
+          data-link-ar="https://ar.wikipedia.org/wiki/الحرف_اليدوية_الفلسطينية" target="_blank"
+          rel="noopener noreferrer">
+          <article class="card">
+            <img src="images/woodwork.jpg" alt="Bethlehem Woodwork" />
+            <div class="card-content">
+              <h3 data-i18n="woodwork">Woodwork</h3>
+              <p data-i18n="woodwork-desc">Intricate wood carvings and mother-of-pearl inlay from Bethlehem.</p>
+            </div>
+          </article>
+        </a>
+      </div>
+    </section>
+
+    <section aria-labelledby="preservation-title">
+      <h2 class="main-title" id="preservation-title" data-i18n="preservation-title">Art as Cultural Preservation</h2>
+      <p data-i18n="preservation-text1">
+        Palestinian art serves as both cultural expression and documentation of heritage...
+      </p>
+      <p data-i18n="preservation-text2">
+        Contemporary Palestinian artists often incorporate traditional motifs...
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+
+      <!-- Logos -->
+      <div class="footer-logos">
+        <a href="https://www.hebron.edu" target="_blank" rel="noopener noreferrer">
+          <img src="https://www.hebron.edu/images/stories/demo/logo-AR.png" alt="Hebron University Logo"
+            class="footer-logo" />
+        </a>
+        <a href="https://www.irishaid.ie" target="_blank" rel="noopener noreferrer">
+          <img src="https://assets.ireland.ie/images/IrishAid_Std_White_194x80_DESKTOP.original.png"
+            alt="Irish Aid Logo" class="footer-logo" />
+        </a>
+      </div>
+
+      <!-- Project Credit (New: Added from poster/project details) -->
+      <p class="project-credit" data-i18n="project-credit">
+        Part of the Empowering Journalists in Digital Media to Promote and Safeguard Palestinian Cultural Heritage project, funded by Irish Aid.
+      </p>
+
+      <!-- Disclaimer -->
+      <p class="disclaimer" data-i18n="disclaimer">
+        The video does not necessarily reflect the views of the donor.
+      </p>
+
+      <!-- Copyright -->
+      <p data-i18n="copyright">
+        &copy; 2025 Palestinian Cultural Heritage. All rights reserved.
+      </p>
+
+      <!-- Social Media -->
+      <ul class="social-links" aria-label="Social Media Links">
+        <li><a href="https://www.facebook.com/hebron.edu/" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-facebook"></i></a></li>
+        <li><a href="https://x.com/hebronuniv?lang=en" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/hebron.edu1/" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.youtube.com/@hebronuniversity3246" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-youtube"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- JS: Hero Rotator + Translate + Menu Toggle -->
+  <script>
+    // === Language Setup ===
+    let currentLanguage = localStorage.getItem('language') || 'en';
+    const languageToggle = document.getElementById('language-toggle');
+
+    const translations = {
+      en: {
+        "site-title": "Turathna", "home": "Home", "about": "About", "cuisine": "Cuisine", "art": "Art",
+        "embroidery": "Embroidery", "tools": "Tools", "buildings": "Buildings", "history": "History",
+        "festivals": "Festivals", "contact": "Contact", "art-title": "Palestinian Art", "oral": "Oral Narratives", "culture": "Culture",
+        "art-subtitle": "Expressions of identity, resistance, and beauty",
+        "art-types-title": "Traditional and Contemporary Palestinian Art",
+        "calligraphy": "Islamic Calligraphy", "calligraphy-desc": "The sacred art of Arabic calligraphy has flourished in Palestine for centuries.",
+        "iconography": "Christian Iconography", "iconography-desc": "Palestine's Christian communities have preserved ancient icon painting traditions.",
+        "contemporary": "Contemporary Art", "contemporary-desc": "Modern Palestinian artists blend traditional motifs with contemporary themes.",
+        "street-art": "Street Art", "street-art-desc": "Murals and graffiti have become powerful tools of expression in Palestine.",
+        "ceramics": "Ceramics", "ceramics-desc": "Hebron's distinctive blue pottery and other ceramic traditions.",
+        "woodwork": "Woodwork", "woodwork-desc": "Intricate wood carvings and mother-of-pearl inlay from Bethlehem.",
+        "preservation-title": "Art as Cultural Preservation",
+        "preservation-text1": "Palestinian art serves as both cultural expression and documentation of heritage. Traditional crafts like olive wood carving, mother-of-pearl inlay, and glassblowing have been practiced for centuries in cities like Bethlehem and Hebron.",
+        "preservation-text2": "Contemporary Palestinian artists often incorporate traditional motifs and symbols into their work while addressing modern themes of identity, displacement, and resistance. The keffiyeh pattern, olive trees, and keys (symbolizing the right of return) frequently appear in Palestinian art across mediums.",
+        "project-credit": "Part of the Empowering Journalists in Digital Media to Promote and Safeguard Palestinian Cultural Heritage project, funded by Irish Aid.",
+		"disclaimer": "The video does not necessarily reflect the views of the donor.",
+        "copyright": "© 2025 Palestinian Cultural Heritage. All rights reserved."
+      },
+      ar: {
+        "site-title": "تراثنا", "home": "الرئيسية", "about": "من نحن", "cuisine": "المطبخ", "art": "الفن",
+        "embroidery": "التطريز", "tools": "الأدوات", "buildings": "المباني", "history": "التاريخ", "culture": "التراث",
+        "festivals": "المهرجانات", "contact": "اتصل بنا", "art-title": "الفن الفلسطيني", "oral": "الروايات الشفوية",
+        "art-subtitle": "تعبيرات عن الهوية والمقاومة والجمال",
+        "art-types-title": "الفن الفلسطيني التقليدي والمعاصر",
+        "calligraphy": "الخط الإسلامي", "calligraphy-desc": "فن الخط العربي المقدس ازدهر في فلسطين لقرون.",
+        "iconography": "الأيقونات المسيحية", "iconography-desc": "حافظت المجتمعات المسيحية في فلسطين على تقاليد رسم الأيقونات القديمة.",
+        "contemporary": "الفن المعاصر", "contemporary-desc": "يمزج الفنانون الفلسطينيون المعاصرون بين الزخارف التقليدية والموضوعات المعاصرة.",
+        "street-art": "فن الشارع", "street-art-desc": "أصبحت الجداريات والغرافيتي أدوات قوية للتعبير في فلسطين.",
+        "ceramics": "السيراميك", "ceramics-desc": "فخار الخليل الأزرق المميز وتقاليد السيراميك الأخرى.",
+        "woodwork": "النحت على الخشب", "woodwork-desc": "منحوتات خشبية معقدة وتطعيم بالصدف من بيت لحم.",
+        "preservation-title": "الفن كحفظ للتراث الثقافي",
+        "preservation-text1": "يخدم الفن الفلسطيني كتعبير ثقافي وتوثيق للتراث. تم ممارسة الحرف التقليدية مثل النحت على خشب الزيتون والتطعيم بالصدف ونفخ الزجاج لقرون في مدن مثل بيت لحم والخليل.",
+        "preservation-text2": "غالبًا ما يدمج الفنانون الفلسطينيون المعاصرون الزخارف والرموز التقليدية في أعمالهم مع معالجة موضوعات حديثة مثل الهوية والتهجير والمقاومة. غالبًا ما تظهر أنماط الكوفية وأشجار الزيتون والمفاتيح (التي ترمز إلى حق العودة) في الفن الفلسطيني عبر الوسائط المختلفة.",
+        "project-credit": "جزء من مشروع تمكين الصحفيين في الإعلام الرقمي لتعزيز وحماية التراث الثقافي الفلسطيني، ممول من قبل Irish Aid.",
+		"disclaimer": "الفيديو لا يعكس بالضرورة وجهة نظر المتبرع.",
+        "copyright": "© 2025 التراث الثقافي الفلسطيني. جميع الحقوق محفوظة."
+      }
+    };
+
+    // === Language & UI Update Functions ===
+    const updateCardLinks = () => {
+      document.querySelectorAll('.card-link').forEach(link => {
+        const href = currentLanguage === 'ar' ? link.dataset.linkAr : link.dataset.linkEn;
+        if (href) link.href = href;
+      });
+    };
+
+    const updateHeroVideo = () => {
+      const container = document.getElementById('hero-video');
+      if (!container) return;
+
+      const arabicId = 'AhIzH5cdRS8';
+      const englishId = 'SwX5q_y8I6k';
+      const videoId = currentLanguage === 'ar' ? arabicId : englishId;
+
+      container.innerHTML = `
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/${videoId}?si=YfzZoQz8GD80Xb-g"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      `;
+    };
+
+    const updateLanguage = () => {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        el.textContent = translations[currentLanguage][key] || key;
+      });
+
+      document.documentElement.lang = currentLanguage;
+      document.documentElement.dir = currentLanguage === 'ar' ? 'rtl' : 'ltr';
+
+      if (languageToggle) {
+        const span = languageToggle.querySelector('span');
+        if (span) {
+          span.textContent = currentLanguage === 'en' ? 'العربية' : 'English';
+        }
+      }
+
+      localStorage.setItem('language', currentLanguage);
+      updateHeroVideo();
+      updateCardLinks();
+    };
+
+    // === Event Listeners ===
+    if (languageToggle) {
+      languageToggle.addEventListener('click', () => {
+        currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+        updateLanguage();
+      });
+    }
+
+    // === Initialize on Load ===
+    updateLanguage();
+
+    // === Hero Background Rotation ===
+    const heroSection = document.querySelector('.hero');
+    const heroImages = [
+      'images/flag.jpg', 'images/hero1.jpg', 'images/hero2.jpg',
+      'images/hero3.jpg', 'images/hero4.jpg', 'images/hero5.jpg',
+      'images/hero6.jpg', 'images/hero7.jpg', 'images/hero8.jpg',
+      'images/ضياء احمد اخليل.png', 'images/اخلاء مسؤولية.png'
+    ];
+    let currentImageIndex = 0;
+
+    const updateHeroBackground = () => {
+      if (heroSection) {
+        heroSection.style.backgroundImage = `url('${heroImages[currentImageIndex]}')`;
+      }
+      currentImageIndex = (currentImageIndex + 1) % heroImages.length;
+      const nextDelay = Math.floor(Math.random() * 5000) + 10000; // 10–15s
+      setTimeout(updateHeroBackground, nextDelay);
+    };
+
+    updateHeroBackground();
+
+    // === Hamburger Menu Toggle ===
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+        hamburger.setAttribute('aria-expanded', String(!expanded));
+      });
+    }
+  </script>
+
+
+</body>
+
+</html>

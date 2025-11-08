@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palestinian Cuisine - Palestinian Cultural Heritage</title>
+
+  <!-- Meta Description -->
+  <meta name="description"
+    content="Explore the rich flavors of traditional Palestinian cuisine, passed down through generations and deeply rooted in cultural heritage." />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Preloaded Hero Images -->
+  <link rel="preload" as="image" href="images/hero1.jpg" />
+  <link rel="preload" as="image" href="images/hero2.jpg" />
+  <link rel="preload" as="image" href="images/hero3.jpg" />
+  <link rel="preload" as="image" href="images/hero4.jpg" />
+  <link rel="preload" as="image" href="images/hero5.jpg" />
+  <link rel="preload" as="image" href="images/hero6.jpg" />
+  <link rel="preload" as="image" href="images/hero7.jpg" />
+  <link rel="preload" as="image" href="images/ضياء احمد اخليل.png" />
+  <link rel="preload" as="image" href="images/اخلاء مسؤولية.png" />
+
+  <!-- Defer JavaScript -->
+  <script defer src="main.js"></script>
+
+  <!-- Website Icon -->
+  <link rel="icon" type="image/png" sizes="192x192" href="images/logo2.png">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Main navigation">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo2.png" alt="Palestinian Heritage Logo" />
+            <h1 data-i18n="site-title">Turathna</h1>
+          </a>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"
+          aria-controls="primary-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="primary-menu">
+          <li><a href="index.html" data-i18n="home">Home</a></li>
+          <li><a href="about.html" data-i18n="about">About</a></li>
+
+          <!-- Grouped Culture Dropdown -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-i18n="culture">Culture</a>
+            <ul class="dropdown-menu">
+              <li><a href="cuisine.html" data-i18n="cuisine">Cuisine</a></li>
+              <li><a href="art.html" data-i18n="art">Art</a></li>
+              <li><a href="embroidery.html" data-i18n="embroidery">Embroidery</a></li>
+              <li><a href="tools.html" data-i18n="tools">Tools</a></li>
+            </ul>
+          </li>
+
+          <li><a href="buildings.html" data-i18n="buildings">Buildings</a></li>
+          <li><a href="history.html" data-i18n="history">History</a></li>
+          <li><a href="festivals.html" data-i18n="festivals">Festivals</a></li>
+          <li><a href="oral.html" data-i18n="oral">Oral Narratives</a></li>
+          <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+          <li>
+            <button id="language-toggle" class="language-toggle" aria-label="Switch language">
+              <span>العربية</span>
+            </button>
+          </li>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" role="banner">
+    <div class="hero-content">
+      <h2 data-i18n="cuisine-title">Palestinian Cuisine</h2>
+      <p data-i18n="cuisine-subtitle">Flavors of the past, preserved through generations of tradition</p>
+    </div>
+  </section>
+
+  <div class="hero-video" id="hero-video" aria-label="Hero Video" style="margin-top: 2rem;">
+    <!-- Video inserted dynamically based on language -->
+  </div>
+
+  <main class="container" id="main-content">
+    <h2 class="main-title" data-i18n="dishes-title">Traditional Palestinian Dishes</h2>
+    <div class="grid" role="region" aria-label="Cuisine Cards">
+
+      <a class="card-link" data-link-en="https://en.wikipedia.org/wiki/Maqluba"
+        data-link-ar="https://ar.wikipedia.org/wiki/%D9%85%D9%82%D9%84%D9%88%D8%A8%D8%A9" target="_blank"
+        rel="noopener noreferrer">
+        <article class="card" role="article" aria-labelledby="maqluba-title">
+          <img src="images/maqluba.jpg" alt="Maqluba dish" loading="lazy" />
+          <div class="card-content">
+            <h3 id="maqluba-title" data-i18n="maqluba">Maqluba</h3>
+            <p data-i18n="maqluba-desc">An upside-down rice and vegetable dish layered with meat or chicken, known for
+              its rich spices and dramatic presentation.</p>
+          </div>
+        </article>
+      </a>
+
+      <a class="card-link" data-link-en="https://en.wikipedia.org/wiki/Musakhan"
+        data-link-ar="https://ar.wikipedia.org/wiki/%D9%85%D8%B3%D8%AE%D9%86" target="_blank" rel="noopener noreferrer">
+        <article class="card" role="article" aria-labelledby="musakhan-title">
+          <img src="images/musakhan.jpg" alt="Musakhan dish" loading="lazy" />
+          <div class="card-content">
+            <h3 id="musakhan-title" data-i18n="musakhan">Musakhan</h3>
+            <p data-i18n="musakhan-desc">Roasted chicken atop flatbread soaked in olive oil and sumac, symbolizing
+              Palestinian hospitality and olive harvest season.</p>
+          </div>
+        </article>
+      </a>
+
+      <a class="card-link" data-link-en="https://en.wikipedia.org/wiki/Knafeh"
+        data-link-ar="https://ar.wikipedia.org/wiki/%D9%83%D9%86%D8%A7%D9%81%D8%A9" target="_blank"
+        rel="noopener noreferrer">
+        <article class="card" role="article" aria-labelledby="kanafeh-title">
+          <img src="images/kanafeh.jpg" alt="Kanafeh dessert" loading="lazy" />
+          <div class="card-content">
+            <h3 id="kanafeh-title" data-i18n="kanafeh">Kanafeh</h3>
+            <p data-i18n="kanafeh-desc">A beloved dessert made with shredded phyllo dough, cheese or semolina, and sweet
+              syrup, often topped with pistachios.</p>
+          </div>
+        </article>
+      </a>
+
+      <a class="card-link" data-link-en="https://en.wikipedia.org/wiki/Fatteh"
+        data-link-ar="https://ar.wikipedia.org/wiki/%D9%81%D8%AA%D8%A9" target="_blank" rel="noopener noreferrer">
+        <article class="card" role="article" aria-labelledby="fatteh-title">
+          <img src="images/fatteh.jpg" alt="Fatteh dish" loading="lazy" />
+          <div class="card-content">
+            <h3 id="fatteh-title" data-i18n="fatteh">Fatteh</h3>
+            <p data-i18n="fatteh-desc">Layered dish of crispy bread, chickpeas, yogurt, and pine nuts—popular during
+              breakfast and Ramadan feasts.</p>
+          </div>
+        </article>
+      </a>
+
+      <a class="card-link" data-link-en="https://en.wikipedia.org/wiki/Za%27atar"
+        data-link-ar="https://ar.wikipedia.org/wiki/%D8%B2%D8%B9%D8%AA%D8%B1_%D9%86%D8%A7%D8%A8%D9%84%D8%B3%D9%8A"
+        target="_blank" rel="noopener noreferrer">
+        <article class="card" role="article" aria-labelledby="zaatar-title">
+          <img src="images/za'atar.jpg" alt="Za'atar herbs" loading="lazy" />
+          <div class="card-content">
+            <h3 id="zaatar-title" data-i18n="zaatar">Za'atar</h3>
+            <p data-i18n="zaatar-desc">A fragrant blend of thyme, sesame, and sumac, traditionally eaten with olive oil
+              and bread.</p>
+          </div>
+        </article>
+      </a>
+
+    </div>
+
+    <h2 class="main-title" data-i18n="traditions-title">Culinary Traditions</h2>
+    <p data-i18n="traditions-text1">Palestinian cuisine reflects the region’s agricultural abundance, seasonal rhythms,
+      and communal dining culture. Recipes are passed down orally from generation to generation.</p>
+    <p data-i18n="traditions-text2">Meals are more than nourishment—they’re a reflection of heritage, memory, and
+      resistance through preservation of food customs under occupation and diaspora.</p>
+  </main>
+
+        <footer>
+    <div class="container footer-content">
+
+      <!-- Logos -->
+      <div class="footer-logos">
+        <a href="https://www.hebron.edu" target="_blank" rel="noopener noreferrer">
+          <img src="https://www.hebron.edu/images/stories/demo/logo-AR.png" alt="Hebron University Logo"
+            class="footer-logo" />
+        </a>
+        <a href="https://www.irishaid.ie" target="_blank" rel="noopener noreferrer">
+          <img src="https://assets.ireland.ie/images/IrishAid_Std_White_194x80_DESKTOP.original.png"
+            alt="Irish Aid Logo" class="footer-logo" />
+        </a>
+      </div>
+
+      <!-- Project Credit (New: Added from poster/project details) -->
+      <p class="project-credit" data-i18n="project-credit">
+        Part of the Empowering Journalists in Digital Media to Promote and Safeguard Palestinian Cultural Heritage project, funded by Irish Aid.
+      </p>
+
+      <!-- Disclaimer -->
+      <p class="disclaimer" data-i18n="disclaimer">
+        The video does not necessarily reflect the views of the donor.
+      </p>
+
+      <!-- Copyright -->
+      <p data-i18n="copyright">
+        &copy; 2025 Palestinian Cultural Heritage. All rights reserved.
+      </p>
+
+      <!-- Social Media -->
+      <ul class="social-links" aria-label="Social Media Links">
+        <li><a href="https://www.facebook.com/hebron.edu/" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-facebook"></i></a></li>
+        <li><a href="https://x.com/hebronuniv?lang=en" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/hebron.edu1/" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.youtube.com/@hebronuniversity3246" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-youtube"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <!-- Scripts inline for performance and maintainability -->
+  <script>
+    // Hero background rotation
+    const heroSection = document.querySelector('.hero');
+    const heroImages = [
+      'images/flag.jpg', 'images/hero1.jpg', 'images/hero2.jpg',
+      'images/hero3.jpg', 'images/hero4.jpg', 'images/hero5.jpg',
+      'images/hero6.jpg', 'images/hero7.jpg', 'images/hero8.jpg',
+      'images/ضياء احمد اخليل.png', 'images/اخلاء مسؤولية.png'
+    ];
+    let currentIndex = 0;
+
+    function updateHeroBackground() {
+      if (heroSection) {
+        heroSection.style.backgroundImage = `url('${heroImages[currentIndex]}')`;
+      }
+      currentIndex = (currentIndex + 1) % heroImages.length;
+      const nextInterval = Math.floor(Math.random() * 5000) + 10000; // 10–15s
+      setTimeout(updateHeroBackground, nextInterval);
+    }
+
+    updateHeroBackground();
+
+    // Language system
+    const translations = {
+      en: {
+        "site-title": "Turathna",
+        "home": "Home",
+        "about": "About",
+        "cuisine": "Cuisine",
+        "art": "Art",
+        "embroidery": "Embroidery",
+        "tools": "Tools",
+        "buildings": "Buildings",
+        "culture": "Culture",
+        "history": "History",
+        "festivals": "Festivals",
+        "contact": "Contact",
+        "oral": "Oral Narratives",
+        "cuisine-title": "Palestinian Cuisine",
+        "cuisine-subtitle": "Flavors of the past, preserved through generations of tradition",
+        "dishes-title": "Traditional Palestinian Dishes",
+        "maqluba": "Maqluba",
+        "maqluba-desc": "The national dish of Palestine, a flavorful upside-down rice dish with meat and vegetables.",
+        "musakhan": "Musakhan",
+        "musakhan-desc": "Sumac-spiced chicken baked on taboon bread with caramelized onions.",
+        "kanafeh": "Kanafeh",
+        "kanafeh-desc": "Palestine's famous dessert made with cheese pastry soaked in sweet syrup.",
+        "msakhan": "Msakhan",
+        "msakhan-desc": "Traditional dish of roasted chicken with sumac and onions on flatbread.",
+        "fatteh": "Fatteh",
+        "fatteh-desc": "Layered dish with bread, chickpeas, yogurt, and pine nuts.",
+        "zaatar": "Za'atar",
+        "zaatar-desc": "The iconic Palestinian herb mix used in bread, pastries, and more.",
+        "traditions-title": "Culinary Traditions",
+        "traditions-text1": "Palestinian cuisine is deeply connected to the land and seasons. Traditional meals often center around fresh, local ingredients like olive oil, za'atar, legumes, grains, and seasonal vegetables. Many dishes are prepared communally and served on large platters for sharing.",
+        "traditions-text2": "Food plays a central role in Palestinian hospitality, with guests always welcomed with coffee or tea and an abundance of food. Traditional cooking methods like the taboon (clay oven) and open-fire cooking continue to be used alongside modern techniques.",
+                    "project-credit": "Part of the Empowering Journalists in Digital Media to Promote and Safeguard Palestinian Cultural Heritage project, funded by Irish Aid.",
+
+		"disclaimer": "The video does not necessarily reflect the views of the donor.",
+        "copyright": "© 2025 Palestinian Cultural Heritage. All rights reserved."
+      },
+      ar: {
+        "site-title": "تراثنا",
+        "home": "الرئيسية",
+        "about": "من نحن",
+        "cuisine": "المطبخ",
+        "art": "الفن",
+        "culture": "التراث",
+        "embroidery": "التطريز",
+        "tools": "الأدوات",
+        "buildings": "المباني",
+        "history": "التاريخ",
+        "festivals": "المهرجانات",
+        "contact": "اتصل بنا",
+        "oral": "الروايات الشفوية",
+        "cuisine-title": "المطبخ الفلسطيني",
+        "cuisine-subtitle": "نكهات الماضي، محفوظة عبر أجيال من التقاليد",
+        "dishes-title": "أطباق فلسطينية تقليدية",
+        "maqluba": "المقلوبة",
+        "maqluba-desc": "الطبق الوطني الفلسطيني، طبق أرز مقلوب مع اللحم والخضروات.",
+        "musakhan": "المسخن",
+        "musakhan-desc": "دجاج متبل بالسماق يُخبز على خبز الطابون مع البصل المكرمل.",
+        "kanafeh": "الكنافة",
+        "kanafeh-desc": "الحلوى الفلسطينية الشهيرة المصنوعة من عجينة الجبنة المنقوعة بالقطر.",
+        "msakhan": "المسخن",
+        "msakhan-desc": "طبق تقليدي من الدجاج المشوي بالسماق والبصل على خبز مسطح.",
+        "fatteh": "الفتة",
+        "fatteh-desc": "طبق مكون من طبقات الخبز والحمص واللبن والمكسرات.",
+        "zaatar": "الزعتر",
+        "zaatar-desc": "خليط الأعشاب الفلسطيني الأيقوني المستخدم في الخبز والمعجنات والمزيد.",
+        "traditions-title": "التقاليد الغذائية",
+        "traditions-text1": "يرتبط المطبخ الفلسطيني ارتباطًا وثيقًا بالأرض والمواسم، حيث تعتمد الوجبات التقليدية على مكونات طازجة ومحلية مثل زيت الزيتون، الزعتر، البقوليات، الحبوب، والخضروات الموسمية.",
+        "traditions-text2": "يلعب الطعام دورًا محوريًا في الضيافة الفلسطينية، حيث يتم الترحيب بالضيوف دائمًا بالقهوة أو الشاي والكثير من الطعام. لا تزال الطرق التقليدية للطهي مثل الطابون والنار المكشوفة مستخدمة إلى جانب الأساليب الحديثة.",
+                               "project-credit": "جزء من مشروع تمكين الصحفيين في الإعلام الرقمي لتعزيز وحماية التراث الثقافي الفلسطيني، ممول من قبل Irish Aid.",
+
+		"disclaimer": "الفيديو لا يعكس بالضرورة وجهة نظر المتبرع.",
+        "copyright": "© 2025 التراث الثقافي الفلسطيني. جميع الحقوق محفوظة."
+      }
+    };
+
+    const languageToggle = document.getElementById('language-toggle');
+    let currentLanguage = localStorage.getItem('language') || 'en';
+
+    function updateHeroVideo() {
+      const heroVideoContainer = document.getElementById('hero-video');
+      if (!heroVideoContainer) return;
+
+      const arabicVideoId = 'HODURHMz0iI';
+      const englishVideoId = 'lQu50tnFgN8';
+      const videoId = currentLanguage === 'ar' ? arabicVideoId : englishVideoId;
+
+      const iframe = `
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/${videoId}?si=YfzZoQz8GD80Xb-g"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      `;
+
+      heroVideoContainer.innerHTML = iframe;
+    }
+
+    // ✅ NEW FUNCTION: Update card <a> hrefs based on currentLanguage
+    function updateCardLinks() {
+      document.querySelectorAll('.card-link').forEach(link => {
+        const en = link.getAttribute('data-link-en');
+        const ar = link.getAttribute('data-link-ar');
+        link.setAttribute('href', currentLanguage === 'ar' ? ar : en);
+      });
+    }
+
+    function updateLanguage() {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        el.textContent = translations[currentLanguage][key] || key;
+      });
+
+      document.documentElement.lang = currentLanguage;
+      document.documentElement.dir = currentLanguage === 'ar' ? 'rtl' : 'ltr';
+
+      if (languageToggle) {
+        const span = languageToggle.querySelector('span');
+        if (span) {
+          span.textContent = currentLanguage === 'en' ? 'العربية' : 'English';
+        }
+      }
+
+      localStorage.setItem('language', currentLanguage);
+      updateHeroVideo();
+      updateCardLinks(); // ✅ Call the fix here
+    }
+
+    if (languageToggle) {
+      languageToggle.addEventListener('click', () => {
+        currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+        updateLanguage();
+      });
+    }
+
+    updateLanguage();
+
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+        hamburger.setAttribute('aria-expanded', String(!isExpanded));
+      });
+    }
+  </script>
+
+
+</body>
+
+</html>
