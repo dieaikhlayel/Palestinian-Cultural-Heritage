@@ -34,6 +34,9 @@
 </head>
 
 <body>
+<div id="loading-screen" class="loading-screen">
+    <div class="loader"></div>
+  </div>
   <header>
     <div class="container">
       <nav aria-label="Main navigation">
@@ -231,7 +234,54 @@
   </footer>
 
   <!-- JS: Hero Rotator + Translate + Menu Toggle -->
-  <script>
+ <script>
+    // === Loading Screen Functionality ===
+    const loadingScreen = document.getElementById('loading-screen');
+    
+    // Set random duration between 5-10 seconds
+    const minDuration = 5000; // 5 seconds
+    const maxDuration = 10000; // 10 seconds
+    const randomDuration = Math.floor(Math.random() * (maxDuration - minDuration + 1)) + minDuration;
+    
+    let pageLoaded = false;
+    let durationReached = false;
+
+    // Function to hide loading screen
+    function hideLoadingScreen() {
+      if (loadingScreen) {
+        loadingScreen.classList.add('fade-out');
+        setTimeout(() => {
+          loadingScreen.style.display = 'none';
+        }, 300);
+      }
+    }
+
+    // Method to check if both conditions are met to hide loading screen
+    function checkHideLoading() {
+      if (pageLoaded && durationReached) {
+        hideLoadingScreen();
+      }
+    }
+
+    // Set timer for random duration
+    setTimeout(() => {
+      durationReached = true;
+      checkHideLoading();
+    }, randomDuration);
+
+    // Hide when page is fully loaded (but wait for minimum duration)
+    window.addEventListener('load', () => {
+      pageLoaded = true;
+      checkHideLoading();
+    });
+
+    // Fallback - hide after maximum time (12 seconds) no matter what
+    setTimeout(() => {
+      if (loadingScreen && loadingScreen.style.display !== 'none') {
+        hideLoadingScreen();
+      }
+    }, 12000); // Maximum 12 seconds fallback
+
     // === Language Setup ===
     let currentLanguage = localStorage.getItem('language') || 'en';
     const languageToggle = document.getElementById('language-toggle');
@@ -253,7 +303,7 @@
         "preservation-text1": "Palestinian art serves as both cultural expression and documentation of heritage. Traditional crafts like olive wood carving, mother-of-pearl inlay, and glassblowing have been practiced for centuries in cities like Bethlehem and Hebron.",
         "preservation-text2": "Contemporary Palestinian artists often incorporate traditional motifs and symbols into their work while addressing modern themes of identity, displacement, and resistance. The keffiyeh pattern, olive trees, and keys (symbolizing the right of return) frequently appear in Palestinian art across mediums.",
         "project-credit": "Part of the Empowering Journalists in Digital Media to Promote and Safeguard Palestinian Cultural Heritage project, funded by Irish Aid.",
-		"disclaimer": "The video does not necessarily reflect the views of the donor.",
+    "disclaimer": "The video does not necessarily reflect the views of the donor.",
         "copyright": "© 2025 Palestinian Cultural Heritage. All rights reserved."
       },
       ar: {
@@ -272,7 +322,7 @@
         "preservation-text1": "يخدم الفن الفلسطيني كتعبير ثقافي وتوثيق للتراث. تم ممارسة الحرف التقليدية مثل النحت على خشب الزيتون والتطعيم بالصدف ونفخ الزجاج لقرون في مدن مثل بيت لحم والخليل.",
         "preservation-text2": "غالبًا ما يدمج الفنانون الفلسطينيون المعاصرون الزخارف والرموز التقليدية في أعمالهم مع معالجة موضوعات حديثة مثل الهوية والتهجير والمقاومة. غالبًا ما تظهر أنماط الكوفية وأشجار الزيتون والمفاتيح (التي ترمز إلى حق العودة) في الفن الفلسطيني عبر الوسائط المختلفة.",
         "project-credit": "جزء من مشروع تمكين الصحفيين في الإعلام الرقمي لتعزيز وحماية التراث الثقافي الفلسطيني، ممول من قبل Irish Aid.",
-		"disclaimer": "الفيديو لا يعكس بالضرورة وجهة نظر المتبرع.",
+    "disclaimer": "الفيديو لا يعكس بالضرورة وجهة نظر المتبرع.",
         "copyright": "© 2025 التراث الثقافي الفلسطيني. جميع الحقوق محفوظة."
       }
     };

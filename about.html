@@ -35,6 +35,9 @@
 </head>
 
 <body>
+<div id="loading-screen" class="loading-screen">
+    <div class="loader"></div>
+  </div>
   <header>
     <div class="container">
       <nav aria-label="Main navigation">
@@ -192,6 +195,53 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      // Loading Screen Functionality
+      const loadingScreen = document.getElementById('loading-screen');
+      
+      // Set random duration between 5-10 seconds
+      const minDuration = 5000; // 5 seconds
+      const maxDuration = 10000; // 10 seconds
+      const randomDuration = Math.floor(Math.random() * (maxDuration - minDuration + 1)) + minDuration;
+      
+      let pageLoaded = false;
+      let durationReached = false;
+
+      // Function to hide loading screen
+      function hideLoadingScreen() {
+        if (loadingScreen) {
+          loadingScreen.classList.add('fade-out');
+          setTimeout(() => {
+            loadingScreen.style.display = 'none';
+          }, 300);
+        }
+      }
+
+      // Method to check if both conditions are met to hide loading screen
+      function checkHideLoading() {
+        if (pageLoaded && durationReached) {
+          hideLoadingScreen();
+        }
+      }
+
+      // Set timer for random duration
+      setTimeout(() => {
+        durationReached = true;
+        checkHideLoading();
+      }, randomDuration);
+
+      // Hide when page is fully loaded (but wait for minimum duration)
+      window.addEventListener('load', () => {
+        pageLoaded = true;
+        checkHideLoading();
+      });
+
+      // Fallback - hide after maximum time (12 seconds) no matter what
+      setTimeout(() => {
+        if (loadingScreen && loadingScreen.style.display !== 'none') {
+          hideLoadingScreen();
+        }
+      }, 12000); // Maximum 12 seconds fallback
+
       // Background slideshow
       const heroSection = document.querySelector('.hero');
       const heroImages = [
@@ -321,7 +371,6 @@
       }
     });
   </script>
-
 
 
 </body>

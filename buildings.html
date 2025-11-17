@@ -42,7 +42,9 @@
 </head>
 
 <body>
-
+<div id="loading-screen" class="loading-screen">
+    <div class="loader"></div>
+  </div>
   <!-- Header -->
   <header>
     <div class="container">
@@ -243,6 +245,56 @@
 
   <!-- Scripts -->
   <!-- Font Awesome Core (extracted version for icon support) -->
+  <!-- Loading Screen Script -->
+  <script defer>
+    // Loading Screen Functionality
+    const loadingScreen = document.getElementById('loading-screen');
+    
+    if (loadingScreen) {
+      // Set random duration between 5-10 seconds
+      const minDuration = 5000; // 5 seconds
+      const maxDuration = 10000; // 10 seconds
+      const randomDuration = Math.floor(Math.random() * (maxDuration - minDuration + 1)) + minDuration;
+      
+      let pageLoaded = false;
+      let durationReached = false;
+
+      // Function to hide loading screen
+      function hideLoadingScreen() {
+        loadingScreen.classList.add('fade-out');
+        setTimeout(() => {
+          loadingScreen.style.display = 'none';
+        }, 300);
+      }
+
+      // Method to check if both conditions are met to hide loading screen
+      function checkHideLoading() {
+        if (pageLoaded && durationReached) {
+          hideLoadingScreen();
+        }
+      }
+
+      // Set timer for random duration
+      setTimeout(() => {
+        durationReached = true;
+        checkHideLoading();
+      }, randomDuration);
+
+      // Hide when page is fully loaded (but wait for minimum duration)
+      window.addEventListener('load', () => {
+        pageLoaded = true;
+        checkHideLoading();
+      });
+
+      // Fallback - hide after maximum time (12 seconds) no matter what
+      setTimeout(() => {
+        if (loadingScreen.style.display !== 'none') {
+          hideLoadingScreen();
+        }
+      }, 12000); // Maximum 12 seconds fallback
+    }
+  </script>
+
   <script defer>
     window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
     !function (t) { var e = {}; function n(r) { if (e[r]) return e[r].exports; var i = e[r] = { i: r, l: !1, exports: {} }; return t[r].call(i.exports, i, i.exports, n), i.l = !0, i.exports } n.m = t, n.c = e, n.d = function (t, e, r) { n.o(t, e) || Object.defineProperty(t, e, { enumerable: !0, get: r }) }, n.r = function (t) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(t, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(t, "__esModule", { value: !0 }) }, n.t = function (t, e) { if (1 & e && (t = n(t)), 8 & e) return t; if (4 & e && "object" == typeof t && t && t.__esModule) return t; var r = Object.create(null); if (n.r(r), Object.defineProperty(r, "default", { enumerable: !0, value: t }), 2 & e && "string" != typeof t) for (var i in t) n.d(r, i, function (e) { return t[e] }.bind(null, i)); return r }, n.n = function (t) { var e = t && t.__esModule ? function () { return t.default } : function () { return t }; return n.d(e, "a", e), e }, n.o = function (t, e) { return Object.prototype.hasOwnProperty.call(t, e) }, n.p = "/", n(n.s = 0) }([function (t, e) { document.querySelectorAll("i.fab, i.fas, i.far").forEach(icon => { icon.setAttribute("aria-hidden", "true") }) }]);
@@ -297,7 +349,7 @@
         "village-homes": "Village Homes",
         "village-desc": "Stone houses with vaulted ceilings and central courtyards.",
         "museum-title": "Museums",
-        "museum-desc": "Immersive museums preserving Palestine’s rich history, culture, and artistic heritage.",
+        "museum-desc": "Immersive museums preserving Palestine's rich history, culture, and artistic heritage.",
         "mosques": "Mosques",
         "mosques-desc": "Islamic architecture blending local and regional styles.",
         "churches": "Churches",
