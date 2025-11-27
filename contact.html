@@ -25,15 +25,23 @@
   <link rel="preload" as="image" href="images/hero5.jpg">
   <link rel="preload" as="image" href="images/hero6.jpg">
   <link rel="preload" as="image" href="images/hero7.jpg">
-  <link rel="preload" as="image" href="images/ضياء احمد اخليل.png" />
-  <link rel="preload" as="image" href="images/اخلاء مسؤولية.png" />
+  <link rel="preload" as="image" href="images/hero8.jpg">
+  <link rel="preload" as="image" href="images/hero9.jpg">
+  <link rel="preload" as="image" href="images/hero10.jpg">
+  <link rel="preload" as="image" href="images/hero11.jpg">
+  <link rel="preload" as="image" href="images/hero12.jpg">
+  <link rel="preload" as="image" href="images/hero13.jpg">
+  <link rel="preload" as="image" href="images/hero14.jpg">
+  <link rel="preload" as="image" href="images/hero15.jpg">
+
+
 
   <!-- Website Icon -->
   <link rel="icon" type="image/png" sizes="192x192" href="images/logo2.png">
 </head>
 
 <body>
-<div id="loading-screen" class="loading-screen">
+  <div id="loading-screen" class="loading-screen">
     <div class="loader"></div>
   </div>
   <!-- Header -->
@@ -51,10 +59,13 @@
           <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="primary-menu">
+
           <li><a href="index.html" data-i18n="home">Home</a></li>
           <li><a href="about.html" data-i18n="about">About</a></li>
 
-          <!-- Grouped Culture Dropdown -->
+          <!-- ────────────────────────────────────── -->
+          <!--              CULTURE DROPDOWN          -->
+          <!-- ────────────────────────────────────── -->
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-i18n="culture">Culture</a>
             <ul class="dropdown-menu">
@@ -65,11 +76,24 @@
             </ul>
           </li>
 
-          <li><a href="buildings.html" data-i18n="buildings">Buildings</a></li>
-          <li><a href="history.html" data-i18n="history">History</a></li>
-          <li><a href="festivals.html" data-i18n="festivals">Festivals</a></li>
-          <li><a href="oral.html" data-i18n="oral">Oral Narratives</a></li>
+          <!-- ────────────────────────────────────── -->
+          <!--             HERITAGE DROPDOWN          -->
+          <!-- ────────────────────────────────────── -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-i18n="heritage">Heritage</a>
+            <ul class="dropdown-menu">
+              <li><a href="history.html" data-i18n="history">History</a></li>
+              <li><a href="buildings.html" data-i18n="buildings">Buildings</a></li>
+              <li><a href="festivals.html" data-i18n="festivals">Festivals</a></li>
+              <li><a href="oral.html" data-i18n="oral">Oral Narratives</a></li>
+            </ul>
+          </li>
+
+          <li><a href="geo.html" data-i18n="geography">Geography</a></li>
+          <li><a href="facts.html" data-i18n="facts">Facts</a></li>
           <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+
+          <!-- LANGUAGE SWITCH -->
           <li>
             <button id="language-toggle" class="language-toggle" aria-label="Switch language">
               <span>العربية</span>
@@ -169,7 +193,7 @@
         project, funded by Irish Aid.
       </p>
 
-    <!-- Copyright -->
+      <!-- Copyright -->
       <p data-i18n="copyright">
         &copy; 2025 Palestinian Cultural Heritage. All rights reserved.
       </p>
@@ -188,129 +212,8 @@
     </div>
   </footer>
   <!-- Scripts -->
-  <script>
-    // === Loading Screen Functionality ===
-    const loadingScreen = document.getElementById('loading-screen');
-    
-    if (loadingScreen) {
-      // Set random duration between 5-10 seconds
-      const minDuration = 5000; // 5 seconds
-      const maxDuration = 10000; // 10 seconds
-      const randomDuration = Math.floor(Math.random() * (maxDuration - minDuration + 1)) + minDuration;
-      
-      let pageLoaded = false;
-      let durationReached = false;
+  <script src="js/contactScript.js"></script>
 
-      // Function to hide loading screen
-      function hideLoadingScreen() {
-        loadingScreen.classList.add('fade-out');
-        setTimeout(() => {
-          loadingScreen.style.display = 'none';
-        }, 300);
-      }
-
-      // Method to check if both conditions are met to hide loading screen
-      function checkHideLoading() {
-        if (pageLoaded && durationReached) {
-          hideLoadingScreen();
-        }
-      }
-
-      // Set timer for random duration
-      setTimeout(() => {
-        durationReached = true;
-        checkHideLoading();
-      }, randomDuration);
-
-      // Hide when page is fully loaded (but wait for minimum duration)
-      window.addEventListener('load', () => {
-        pageLoaded = true;
-        checkHideLoading();
-      });
-
-      // Fallback - hide after maximum time (12 seconds) no matter what
-      setTimeout(() => {
-        if (loadingScreen.style.display !== 'none') {
-          hideLoadingScreen();
-        }
-      }, 12000); // Maximum 12 seconds fallback
-    }
-
-    // === Existing Hero Background Code ===
-    const heroSection = document.querySelector('.hero');
-    const heroImages = [
-      'images/flag.jpg', 'images/hero1.jpg', 'images/hero2.jpg',
-      'images/hero3.jpg', 'images/hero4.jpg', 'images/hero5.jpg',
-      'images/hero6.jpg', 'images/hero7.jpg', 'images/hero8.jpg',
-      'images/ضياء احمد اخليل.png', 'images/اخلاء مسؤولية.png'
-    ];
-    let currentIndex = 0;
-
-    function updateHeroBackground() {
-      heroSection.style.backgroundImage = `url('${heroImages[currentIndex]}')`;
-      currentIndex = (currentIndex + 1) % heroImages.length;
-      setTimeout(updateHeroBackground, Math.floor(Math.random() * 5000) + 10000);
-    }
-    updateHeroBackground();
-
-    // === Existing Translation Code ===
-    const translations = {
-      en: {
-        "site-title": "Turathna", "home": "Home", "about": "About", "cuisine": "Cuisine", "art": "Art",
-        "embroidery": "Embroidery", "tools": "Tools", "buildings": "Buildings", "history": "History", "culture": "Culture",
-        "festivals": "Festivals", "contact": "Contact", "contact-title": "Contact Us",
-        "contact-subtitle": "Get in touch with the Palestinian Cultural Heritage team",
-        "form-title": "Send Us a Message", "name-label": "Your Name", "email-label": "Email Address",
-        "subject-label": "Subject", "message-label": "Your Message", "send-button": "Send Message",
-        "email-title": "Email Us", "general-email": "General Inquiries:",
-        "programs-email": "Cultural Programs:", "call-title": "Call Us",
-        "main-office": "Main Office:", "education-dept": "Education Department:",
-        "oral": "Oral Narratives",
-        "project-credit": "Part of the Empowering Journalists in Digital Media to Promote and Safeguard Palestinian Cultural Heritage project, funded by Irish Aid.",
-
-        "copyright": "© 2025 Palestinian Cultural Heritage. All rights reserved."
-      },
-      ar: {
-        "site-title": "تراثنا", "home": "الرئيسية", "about": "من نحن", "cuisine": "المطبخ", "art": "الفن",
-        "embroidery": "التطريز", "tools": "الأدوات", "buildings": "المباني", "history": "التاريخ", "culture": "التراث",
-        "festivals": "المهرجانات", "contact": "اتصل بنا", "contact-title": "اتصل بنا",
-        "contact-subtitle": "تواصل مع فريق التراث الثقافي الفلسطيني", "form-title": "أرسل لنا رسالة",
-        "name-label": "اسمك", "email-label": "عنوان البريد الإلكتروني", "subject-label": "الموضوع",
-        "message-label": "رسالتك", "send-button": "إرسال الرسالة", "email-title": "راسلونا عبر البريد",
-        "general-email": "الاستفسارات العامة:", "programs-email": "البرامج الثقافية:", "call-title": "اتصل بنا",
-        "main-office": "المكتب الرئيسي:", "education-dept": "قسم التعليم:",
-        "oral": "الروايات الشفوية",
-        "project-credit": "جزء من مشروع تمكين الصحفيين في الإعلام الرقمي لتعزيز وحماية التراث الثقافي الفلسطيني، ممول من قبل Irish Aid.",
-
-        "copyright": "© 2025 التراث الثقافي الفلسطيني. جميع الحقوق محفوظة."
-      }
-    };
-
-    const languageToggle = document.getElementById('language-toggle');
-    let currentLanguage = localStorage.getItem('language') || 'en';
-
-    function updateLanguage() {
-      document.documentElement.lang = currentLanguage;
-      document.documentElement.dir = currentLanguage === 'ar' ? 'rtl' : 'ltr';
-      languageToggle.querySelector('span').textContent = currentLanguage === 'en' ? 'العربية' : 'English';
-
-      document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        const content = translations[currentLanguage][key];
-        if (content) {
-          el.innerHTML = content.includes('<br>') ? content : document.createTextNode(content).textContent;
-        }
-      });
-    }
-
-    languageToggle.addEventListener('click', () => {
-      currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
-      localStorage.setItem('language', currentLanguage);
-      updateLanguage();
-    });
-
-    updateLanguage();
-  </script>
 </body>
 
 </html>

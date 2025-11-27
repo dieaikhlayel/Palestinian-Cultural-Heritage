@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discover historical, cultural, and demographic facts about Palestine." />
+    <title>Palestinian Facts | Turathna</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo2.png" type="image/png" />
+
+    <!-- Preload Key Images -->
+    <link rel="preload" as="image" href="images/flag.jpg">
+    <link rel="preload" as="image" href="images/hero1.jpg">
+    <link rel="preload" as="image" href="images/hero2.jpg">
+    <link rel="preload" as="image" href="images/hero3.jpg">
+    <link rel="preload" as="image" href="images/hero4.jpg">
+    <link rel="preload" as="image" href="images/hero5.jpg">
+    <link rel="preload" as="image" href="images/hero6.jpg">
+    <link rel="preload" as="image" href="images/hero7.jpg">
+    <link rel="preload" as="image" href="images/hero8.jpg">
+    <link rel="preload" as="image" href="images/hero9.jpg">
+    <link rel="preload" as="image" href="images/hero10.jpg">
+    <link rel="preload" as="image" href="images/hero11.jpg">
+    <link rel="preload" as="image" href="images/hero12.jpg">
+    <link rel="preload" as="image" href="images/hero13.jpg">
+    <link rel="preload" as="image" href="images/hero14.jpg">
+    <link rel="preload" as="image" href="images/hero15.jpg">
+
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav aria-label="Main navigation">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo2.png" alt="Logo" />
+                        <h1 data-i18n="site-title">Turathna</h1>
+                    </a>
+                </div>
+
+                <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <ul class="nav-links" id="primary-menu">
+                    <li><a href="index.html" data-i18n="home">Home</a></li>
+                    <li><a href="about.html" data-i18n="about">About</a></li>
+
+                    <!-- CULTURE DROPDOWN -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-i18n="culture">Culture</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="cuisine.html" data-i18n="cuisine">Cuisine</a></li>
+                            <li><a href="art.html" data-i18n="art">Art</a></li>
+                            <li><a href="embroidery.html" data-i18n="embroidery">Embroidery</a></li>
+                            <li><a href="tools.html" data-i18n="tools">Tools</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- HERITAGE DROPDOWN -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-i18n="heritage">Heritage</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="history.html" data-i18n="history">History</a></li>
+                            <li><a href="buildings.html" data-i18n="buildings">Buildings</a></li>
+                            <li><a href="festivals.html" data-i18n="festivals">Festivals</a></li>
+                            <li><a href="oral.html" data-i18n="oral">Oral Narratives</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="geo.html" data-i18n="geography">Geography</a></li>
+                    <li><a href="facts.html" data-i18n="facts">Facts</a></li>
+                    <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+
+                    <li>
+                        <button id="language-toggle" class="language-toggle">
+                            <span>العربية</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" style="height: 60vh;">
+        <div class="hero-content">
+            <h2 data-i18n="facts-hero-title">Important Facts About Palestine</h2>
+            <p data-i18n="facts-hero-text">
+                Learn key historical, cultural, and demographic facts that define Palestine's identity.
+            </p>
+        </div>
+    </section>
+
+    <div class="hero-video" id="hero-video" aria-label="Hero Video" style="margin-top: 2rem;"></div>
+    <!-- Main -->
+    <main class="container" id="main-content">
+
+        <h2 class="main-title" data-i18n="facts-title">Palestinian Facts</h2>
+
+        <div class="grid">
+
+            <!-- Fact 1 -->
+            <article class="card">
+                <img src="images/fact1.jpg" alt="Historic Palestine" />
+                <div class="card-content">
+                    <h3 data-i18n="fact1-title">Ancient Civilizations</h3>
+                    <p data-i18n="fact1-text">
+                        Palestine has hosted some of the world’s oldest civilizations, with traces dating back over
+                        5,000 years.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Fact 2 -->
+            <article class="card">
+                <img src="images/fact2.jpg" alt="Olive Trees" />
+                <div class="card-content">
+                    <h3 data-i18n="fact2-title">Olive Trees</h3>
+                    <p data-i18n="fact2-text">
+                        Some olive trees in Palestine are more than 2,000 years old, symbolizing resilience and
+                        heritage.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Fact 3 -->
+            <article class="card">
+                <img src="images/fact3.png" alt="Population" />
+                <div class="card-content">
+                    <h3 data-i18n="fact3-title">Population</h3>
+                    <p data-i18n="fact3-text">
+                        More than 14 million Palestinians live around the world, both in Palestine and in diaspora
+                        communities.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Fact 4 -->
+            <article class="card">
+                <img src="images/fact4.jpg" alt="Cuisine" />
+                <div class="card-content">
+                    <h3 data-i18n="fact4-title">Rich Cuisine</h3>
+                    <p data-i18n="fact4-text">
+                        Palestinian cuisine is known for dishes like musakhan, maqluba, and knafeh — each tied to local
+                        tradition.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Fact 5 -->
+            <article class="card">
+                <img src="images/fact5.jpg" alt="UNESCO" />
+                <div class="card-content">
+                    <h3 data-i18n="fact5-title">UNESCO Sites</h3>
+                    <p data-i18n="fact5-text">
+                        Sites like Hebron’s Old City and Bethlehem’s Nativity Church are recognized as UNESCO World
+                        Heritage.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Fact 6 -->
+            <article class="card">
+                <img src="images/fact6.jpg" alt="Dead Sea" />
+                <div class="card-content">
+                    <h3 data-i18n="fact6-title">Lowest Point on Earth</h3>
+                    <p data-i18n="fact6-text">
+                        The Dead Sea in Palestine sits at the lowest point on Earth, about 430 meters below sea level.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Fact 7 -->
+            <article class="card">
+                <img src="images/embroidery.jpg" alt="Embroidery" />
+                <div class="card-content">
+                    <h3 data-i18n="fact7-title">Traditional Embroidery</h3>
+                    <p data-i18n="fact7-text">
+                        Palestinian embroidery, known as “Tatreez,” is a centuries-old art form recognized by UNESCO.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Fact 8 -->
+            <article class="card">
+                <img src="images/fact8.jpg" alt="Jerusalem Languages" />
+                <div class="card-content">
+                    <h3 data-i18n="fact8-title">Multiple Languages in Jerusalem</h3>
+                    <p data-i18n="fact8-text">
+                        Arabic, Aramaic, and other ancient languages have historically been spoken in Jerusalem.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Fact 9 -->
+            <article class="card">
+                <img src="images/fact9.jpg" alt="Wildlife" />
+                <div class="card-content">
+                    <h3 data-i18n="fact9-title">Unique Wildlife</h3>
+                    <p data-i18n="fact9-text">
+                        Palestine is home to diverse wildlife including gazelles, hyraxes, and rare migratory birds.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Fact 10 -->
+            <article class="card">
+                <img src="images/fact10.jpg" alt="Traditional Music" />
+                <div class="card-content">
+                    <h3 data-i18n="fact10-title">Traditional Music</h3>
+                    <p data-i18n="fact10-text">
+                        Palestinian traditional music features instruments like the oud, mijwiz, and qanun.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+
+            <div class="footer-logos">
+                <a href="https://www.hebron.edu" target="_blank"><img
+                        src="https://www.hebron.edu/images/stories/demo/logo-AR.png" class="footer-logo"></a>
+                <a href="https://www.irishaid.ie" target="_blank"><img
+                        src="https://assets.ireland.ie/images/IrishAid_Std_White_194x80_DESKTOP.original.png"
+                        class="footer-logo"></a>
+            </div>
+
+            <p class="project-credit" data-i18n="project-credit">
+                Part of the Empowering Journalists in Digital Media to Promote and Safeguard Palestinian Cultural
+                Heritage
+                project, funded by Irish Aid.
+            </p>
+
+            <p class="disclaimer" data-i18n="disclaimer">
+                The video does not necessarily reflect the views of the donor.
+            </p>
+
+            <p data-i18n="copyright">
+                © 2025 Palestinian Cultural Heritage. All rights reserved.
+            </p>
+
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/hebron.edu/" target="_blank"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li><a href="https://x.com/hebronuniv?lang=en" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/hebron.edu1/" target="_blank"><i
+                            class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/@hebronuniversity3246" target="_blank"><i
+                            class="fab fa-youtube"></i></a></li>
+            </ul>
+
+        </div>
+    </footer>
+
+    <script src="js/factsScript.js"></script>
+
+</body>
+
+</html>

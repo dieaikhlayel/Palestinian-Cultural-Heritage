@@ -18,15 +18,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link rel="preload" as="image" href="images/hero1.jpg" />
-  <link rel="preload" as="image" href="images/hero2.jpg" />
-  <link rel="preload" as="image" href="images/hero3.jpg" />
-  <link rel="preload" as="image" href="images/hero4.jpg" />
-  <link rel="preload" as="image" href="images/hero5.jpg" />
-  <link rel="preload" as="image" href="images/hero6.jpg" />
-  <link rel="preload" as="image" href="images/hero7.jpg" />
-  <link rel="preload" as="image" href="images/ضياء احمد اخليل.png" />
-  <link rel="preload" as="image" href="images/اخلاء مسؤولية.png" />
+  <link rel="preload" as="image" href="images/flag.jpg">
+  <link rel="preload" as="image" href="images/hero1.jpg">
+  <link rel="preload" as="image" href="images/hero2.jpg">
+  <link rel="preload" as="image" href="images/hero3.jpg">
+  <link rel="preload" as="image" href="images/hero4.jpg">
+  <link rel="preload" as="image" href="images/hero5.jpg">
+  <link rel="preload" as="image" href="images/hero6.jpg">
+  <link rel="preload" as="image" href="images/hero7.jpg">
+  <link rel="preload" as="image" href="images/hero8.jpg">
+  <link rel="preload" as="image" href="images/hero9.jpg">
+  <link rel="preload" as="image" href="images/hero10.jpg">
+  <link rel="preload" as="image" href="images/hero11.jpg">
+  <link rel="preload" as="image" href="images/hero12.jpg">
+  <link rel="preload" as="image" href="images/hero13.jpg">
+  <link rel="preload" as="image" href="images/hero14.jpg">
+  <link rel="preload" as="image" href="images/hero15.jpg">
+
 
 
   <!-- Website Icon -->
@@ -34,7 +42,7 @@
 </head>
 
 <body>
-<div id="loading-screen" class="loading-screen">
+  <div id="loading-screen" class="loading-screen">
     <div class="loader"></div>
   </div>
   <header>
@@ -51,10 +59,13 @@
           <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="primary-menu">
+
           <li><a href="index.html" data-i18n="home">Home</a></li>
           <li><a href="about.html" data-i18n="about">About</a></li>
 
-          <!-- Grouped Culture Dropdown -->
+          <!-- ────────────────────────────────────── -->
+          <!--              CULTURE DROPDOWN          -->
+          <!-- ────────────────────────────────────── -->
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-i18n="culture">Culture</a>
             <ul class="dropdown-menu">
@@ -65,18 +76,30 @@
             </ul>
           </li>
 
-          <li><a href="buildings.html" data-i18n="buildings">Buildings</a></li>
-          <li><a href="history.html" data-i18n="history">History</a></li>
-          <li><a href="festivals.html" data-i18n="festivals">Festivals</a></li>
-          <li><a href="oral.html" data-i18n="oral">Oral Narratives</a></li>
+          <!-- ────────────────────────────────────── -->
+          <!--             HERITAGE DROPDOWN          -->
+          <!-- ────────────────────────────────────── -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-i18n="heritage">Heritage</a>
+            <ul class="dropdown-menu">
+              <li><a href="history.html" data-i18n="history">History</a></li>
+              <li><a href="buildings.html" data-i18n="buildings">Buildings</a></li>
+              <li><a href="festivals.html" data-i18n="festivals">Festivals</a></li>
+              <li><a href="oral.html" data-i18n="oral">Oral Narratives</a></li>
+            </ul>
+          </li>
+
+          <li><a href="geo.html" data-i18n="geography">Geography</a></li>
+          <li><a href="facts.html" data-i18n="facts">Facts</a></li>
           <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+
+          <!-- LANGUAGE SWITCH -->
           <li>
             <button id="language-toggle" class="language-toggle" aria-label="Switch language">
               <span>العربية</span>
             </button>
           </li>
         </ul>
-
       </nav>
     </div>
   </header>
@@ -206,7 +229,8 @@
 
       <!-- Project Credit (New: Added from poster/project details) -->
       <p class="project-credit" data-i18n="project-credit">
-        Part of the Empowering Journalists in Digital Media to Promote and Safeguard Palestinian Cultural Heritage project, funded by Irish Aid.
+        Part of the Empowering Journalists in Digital Media to Promote and Safeguard Palestinian Cultural Heritage
+        project, funded by Irish Aid.
       </p>
 
       <!-- Disclaimer -->
@@ -234,192 +258,7 @@
   </footer>
 
   <!-- JS: Hero Rotator + Translate + Menu Toggle -->
- <script>
-    // === Loading Screen Functionality ===
-    const loadingScreen = document.getElementById('loading-screen');
-    
-    // Set random duration between 5-10 seconds
-    const minDuration = 5000; // 5 seconds
-    const maxDuration = 10000; // 10 seconds
-    const randomDuration = Math.floor(Math.random() * (maxDuration - minDuration + 1)) + minDuration;
-    
-    let pageLoaded = false;
-    let durationReached = false;
-
-    // Function to hide loading screen
-    function hideLoadingScreen() {
-      if (loadingScreen) {
-        loadingScreen.classList.add('fade-out');
-        setTimeout(() => {
-          loadingScreen.style.display = 'none';
-        }, 300);
-      }
-    }
-
-    // Method to check if both conditions are met to hide loading screen
-    function checkHideLoading() {
-      if (pageLoaded && durationReached) {
-        hideLoadingScreen();
-      }
-    }
-
-    // Set timer for random duration
-    setTimeout(() => {
-      durationReached = true;
-      checkHideLoading();
-    }, randomDuration);
-
-    // Hide when page is fully loaded (but wait for minimum duration)
-    window.addEventListener('load', () => {
-      pageLoaded = true;
-      checkHideLoading();
-    });
-
-    // Fallback - hide after maximum time (12 seconds) no matter what
-    setTimeout(() => {
-      if (loadingScreen && loadingScreen.style.display !== 'none') {
-        hideLoadingScreen();
-      }
-    }, 12000); // Maximum 12 seconds fallback
-
-    // === Language Setup ===
-    let currentLanguage = localStorage.getItem('language') || 'en';
-    const languageToggle = document.getElementById('language-toggle');
-
-    const translations = {
-      en: {
-        "site-title": "Turathna", "home": "Home", "about": "About", "cuisine": "Cuisine", "art": "Art",
-        "embroidery": "Embroidery", "tools": "Tools", "buildings": "Buildings", "history": "History",
-        "festivals": "Festivals", "contact": "Contact", "art-title": "Palestinian Art", "oral": "Oral Narratives", "culture": "Culture",
-        "art-subtitle": "Expressions of identity, resistance, and beauty",
-        "art-types-title": "Traditional and Contemporary Palestinian Art",
-        "calligraphy": "Islamic Calligraphy", "calligraphy-desc": "The sacred art of Arabic calligraphy has flourished in Palestine for centuries.",
-        "iconography": "Christian Iconography", "iconography-desc": "Palestine's Christian communities have preserved ancient icon painting traditions.",
-        "contemporary": "Contemporary Art", "contemporary-desc": "Modern Palestinian artists blend traditional motifs with contemporary themes.",
-        "street-art": "Street Art", "street-art-desc": "Murals and graffiti have become powerful tools of expression in Palestine.",
-        "ceramics": "Ceramics", "ceramics-desc": "Hebron's distinctive blue pottery and other ceramic traditions.",
-        "woodwork": "Woodwork", "woodwork-desc": "Intricate wood carvings and mother-of-pearl inlay from Bethlehem.",
-        "preservation-title": "Art as Cultural Preservation",
-        "preservation-text1": "Palestinian art serves as both cultural expression and documentation of heritage. Traditional crafts like olive wood carving, mother-of-pearl inlay, and glassblowing have been practiced for centuries in cities like Bethlehem and Hebron.",
-        "preservation-text2": "Contemporary Palestinian artists often incorporate traditional motifs and symbols into their work while addressing modern themes of identity, displacement, and resistance. The keffiyeh pattern, olive trees, and keys (symbolizing the right of return) frequently appear in Palestinian art across mediums.",
-        "project-credit": "Part of the Empowering Journalists in Digital Media to Promote and Safeguard Palestinian Cultural Heritage project, funded by Irish Aid.",
-    "disclaimer": "The video does not necessarily reflect the views of the donor.",
-        "copyright": "© 2025 Palestinian Cultural Heritage. All rights reserved."
-      },
-      ar: {
-        "site-title": "تراثنا", "home": "الرئيسية", "about": "من نحن", "cuisine": "المطبخ", "art": "الفن",
-        "embroidery": "التطريز", "tools": "الأدوات", "buildings": "المباني", "history": "التاريخ", "culture": "التراث",
-        "festivals": "المهرجانات", "contact": "اتصل بنا", "art-title": "الفن الفلسطيني", "oral": "الروايات الشفوية",
-        "art-subtitle": "تعبيرات عن الهوية والمقاومة والجمال",
-        "art-types-title": "الفن الفلسطيني التقليدي والمعاصر",
-        "calligraphy": "الخط الإسلامي", "calligraphy-desc": "فن الخط العربي المقدس ازدهر في فلسطين لقرون.",
-        "iconography": "الأيقونات المسيحية", "iconography-desc": "حافظت المجتمعات المسيحية في فلسطين على تقاليد رسم الأيقونات القديمة.",
-        "contemporary": "الفن المعاصر", "contemporary-desc": "يمزج الفنانون الفلسطينيون المعاصرون بين الزخارف التقليدية والموضوعات المعاصرة.",
-        "street-art": "فن الشارع", "street-art-desc": "أصبحت الجداريات والغرافيتي أدوات قوية للتعبير في فلسطين.",
-        "ceramics": "السيراميك", "ceramics-desc": "فخار الخليل الأزرق المميز وتقاليد السيراميك الأخرى.",
-        "woodwork": "النحت على الخشب", "woodwork-desc": "منحوتات خشبية معقدة وتطعيم بالصدف من بيت لحم.",
-        "preservation-title": "الفن كحفظ للتراث الثقافي",
-        "preservation-text1": "يخدم الفن الفلسطيني كتعبير ثقافي وتوثيق للتراث. تم ممارسة الحرف التقليدية مثل النحت على خشب الزيتون والتطعيم بالصدف ونفخ الزجاج لقرون في مدن مثل بيت لحم والخليل.",
-        "preservation-text2": "غالبًا ما يدمج الفنانون الفلسطينيون المعاصرون الزخارف والرموز التقليدية في أعمالهم مع معالجة موضوعات حديثة مثل الهوية والتهجير والمقاومة. غالبًا ما تظهر أنماط الكوفية وأشجار الزيتون والمفاتيح (التي ترمز إلى حق العودة) في الفن الفلسطيني عبر الوسائط المختلفة.",
-        "project-credit": "جزء من مشروع تمكين الصحفيين في الإعلام الرقمي لتعزيز وحماية التراث الثقافي الفلسطيني، ممول من قبل Irish Aid.",
-    "disclaimer": "الفيديو لا يعكس بالضرورة وجهة نظر المتبرع.",
-        "copyright": "© 2025 التراث الثقافي الفلسطيني. جميع الحقوق محفوظة."
-      }
-    };
-
-    // === Language & UI Update Functions ===
-    const updateCardLinks = () => {
-      document.querySelectorAll('.card-link').forEach(link => {
-        const href = currentLanguage === 'ar' ? link.dataset.linkAr : link.dataset.linkEn;
-        if (href) link.href = href;
-      });
-    };
-
-    const updateHeroVideo = () => {
-      const container = document.getElementById('hero-video');
-      if (!container) return;
-
-      const arabicId = 'AhIzH5cdRS8';
-      const englishId = 'SwX5q_y8I6k';
-      const videoId = currentLanguage === 'ar' ? arabicId : englishId;
-
-      container.innerHTML = `
-        <iframe width="560" height="315"
-          src="https://www.youtube.com/embed/${videoId}?si=YfzZoQz8GD80Xb-g"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen>
-        </iframe>
-      `;
-    };
-
-    const updateLanguage = () => {
-      document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.dataset.i18n;
-        el.textContent = translations[currentLanguage][key] || key;
-      });
-
-      document.documentElement.lang = currentLanguage;
-      document.documentElement.dir = currentLanguage === 'ar' ? 'rtl' : 'ltr';
-
-      if (languageToggle) {
-        const span = languageToggle.querySelector('span');
-        if (span) {
-          span.textContent = currentLanguage === 'en' ? 'العربية' : 'English';
-        }
-      }
-
-      localStorage.setItem('language', currentLanguage);
-      updateHeroVideo();
-      updateCardLinks();
-    };
-
-    // === Event Listeners ===
-    if (languageToggle) {
-      languageToggle.addEventListener('click', () => {
-        currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
-        updateLanguage();
-      });
-    }
-
-    // === Initialize on Load ===
-    updateLanguage();
-
-    // === Hero Background Rotation ===
-    const heroSection = document.querySelector('.hero');
-    const heroImages = [
-      'images/flag.jpg', 'images/hero1.jpg', 'images/hero2.jpg',
-      'images/hero3.jpg', 'images/hero4.jpg', 'images/hero5.jpg',
-      'images/hero6.jpg', 'images/hero7.jpg', 'images/hero8.jpg',
-      'images/ضياء احمد اخليل.png', 'images/اخلاء مسؤولية.png'
-    ];
-    let currentImageIndex = 0;
-
-    const updateHeroBackground = () => {
-      if (heroSection) {
-        heroSection.style.backgroundImage = `url('${heroImages[currentImageIndex]}')`;
-      }
-      currentImageIndex = (currentImageIndex + 1) % heroImages.length;
-      const nextDelay = Math.floor(Math.random() * 5000) + 10000; // 10–15s
-      setTimeout(updateHeroBackground, nextDelay);
-    };
-
-    updateHeroBackground();
-
-    // === Hamburger Menu Toggle ===
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-
-    if (hamburger && navLinks) {
-      hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        const expanded = hamburger.getAttribute('aria-expanded') === 'true';
-        hamburger.setAttribute('aria-expanded', String(!expanded));
-      });
-    }
-  </script>
+  <script src="js/artScript.js"></script>
 
 
 </body>

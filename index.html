@@ -31,8 +31,18 @@
   <link rel="preload" as="image" href="images/hero5.jpg">
   <link rel="preload" as="image" href="images/hero6.jpg">
   <link rel="preload" as="image" href="images/hero7.jpg">
-  <link rel="preload" as="image" href="images/ضياء احمد اخليل.png" />
-  <link rel="preload" as="image" href="images/اخلاء مسؤولية.png" />
+  <link rel="preload" as="image" href="images/hero8.jpg">
+  <link rel="preload" as="image" href="images/hero9.jpg">
+  <link rel="preload" as="image" href="images/hero10.jpg">
+  <link rel="preload" as="image" href="images/hero11.jpg">
+  <link rel="preload" as="image" href="images/hero12.jpg">
+  <link rel="preload" as="image" href="images/hero13.jpg">
+  <link rel="preload" as="image" href="images/hero14.jpg">
+  <link rel="preload" as="image" href="images/hero15.jpg">
+
+
+
+
 
   <!-- Website Icon -->
   <link rel="icon" type="image/png" sizes="192x192" href="images/logo2.png">
@@ -40,7 +50,7 @@
 </head>
 
 <body>
-<div id="loading-screen" class="loading-screen">
+  <div id="loading-screen" class="loading-screen">
     <div class="loader"></div>
   </div>
 
@@ -58,10 +68,13 @@
           <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="primary-menu">
+
           <li><a href="index.html" data-i18n="home">Home</a></li>
           <li><a href="about.html" data-i18n="about">About</a></li>
 
-          <!-- Grouped Culture Dropdown -->
+          <!-- ────────────────────────────────────── -->
+          <!--              CULTURE DROPDOWN          -->
+          <!-- ────────────────────────────────────── -->
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-i18n="culture">Culture</a>
             <ul class="dropdown-menu">
@@ -72,11 +85,24 @@
             </ul>
           </li>
 
-          <li><a href="buildings.html" data-i18n="buildings">Buildings</a></li>
-          <li><a href="history.html" data-i18n="history">History</a></li>
-          <li><a href="festivals.html" data-i18n="festivals">Festivals</a></li>
-          <li><a href="oral.html" data-i18n="oral">Oral Narratives</a></li>
+          <!-- ────────────────────────────────────── -->
+          <!--             HERITAGE DROPDOWN          -->
+          <!-- ────────────────────────────────────── -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-i18n="heritage">Heritage</a>
+            <ul class="dropdown-menu">
+              <li><a href="history.html" data-i18n="history">History</a></li>
+              <li><a href="buildings.html" data-i18n="buildings">Buildings</a></li>
+              <li><a href="festivals.html" data-i18n="festivals">Festivals</a></li>
+              <li><a href="oral.html" data-i18n="oral">Oral Narratives</a></li>
+            </ul>
+          </li>
+
+          <li><a href="geo.html" data-i18n="geography">Geography</a></li>
+          <li><a href="facts.html" data-i18n="facts">Facts</a></li>
           <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+
+          <!-- LANGUAGE SWITCH -->
           <li>
             <button id="language-toggle" class="language-toggle" aria-label="Switch language">
               <span>العربية</span>
@@ -117,7 +143,7 @@
           </div>
         </article>
       </a>
-    
+
       <!-- Embroidery -->
       <a href="embroidery.html" class="card-link">
         <article class="card">
@@ -131,7 +157,7 @@
           </div>
         </article>
       </a>
-    
+
       <!-- Architecture -->
       <a href="buildings.html" class="card-link">
         <article class="card">
@@ -145,7 +171,7 @@
           </div>
         </article>
       </a>
-    
+
       <!-- Art -->
       <a href="art.html" class="card-link">
         <article class="card">
@@ -159,7 +185,7 @@
           </div>
         </article>
       </a>
-    
+
       <!-- Tools -->
       <a href="tools.html" class="card-link">
         <article class="card">
@@ -173,7 +199,7 @@
           </div>
         </article>
       </a>
-    
+
       <!-- History -->
       <a href="history.html" class="card-link">
         <article class="card">
@@ -187,7 +213,7 @@
           </div>
         </article>
       </a>
-    
+
       <!-- Festivals -->
       <a href="festivals.html" class="card-link">
         <article class="card">
@@ -201,7 +227,7 @@
           </div>
         </article>
       </a>
-    
+
       <!-- Oral Narratives -->
       <a href="oral.html" class="card-link">
         <article class="card">
@@ -215,9 +241,35 @@
           </div>
         </article>
       </a>
-    
-    </div>
-    
+
+      <!-- Geography -->
+      <a href="geo.html" class="card-link">
+        <article class="card">
+          <img src="images/geo.jpg" alt="Palestinian Geography" />
+          <div class="card-content">
+            <h3 data-i18n="geography">Geography</h3>
+            <p data-i18n="geo-hero-text">
+              Explore the diverse mountains, valleys, plains, and natural landscapes of Palestine.
+            </p>
+            <span data-i18n="explore">Explore Geography →</span>
+          </div>
+        </article>
+      </a>
+
+      <!-- Facts -->
+      <a href="facts.html" class="card-link">
+        <article class="card">
+          <img src="images/facts.png" alt="Palestinian Facts" />
+          <div class="card-content">
+            <h3 data-i18n="facts">Facts</h3>
+            <p data-i18n="facts-hero-text">
+              Discover unique cultural, historical, and geographical facts about Palestine.
+            </p>
+            <span data-i18n="explore">Explore →</span>
+          </div>
+        </article>
+      </a>
+
 
 
     </div>
@@ -268,227 +320,7 @@
     </div>
   </footer>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      /** =======================
-       * 0. Loading Screen Functionality
-       * ======================= */
-      const loadingScreen = document.getElementById('loading-screen');
-      
-      // Set random duration between 5-10 seconds
-      const minDuration = 5000; // 5 seconds
-      const maxDuration = 10000; // 10 seconds
-      const randomDuration = Math.floor(Math.random() * (maxDuration - minDuration + 1)) + minDuration;
-      
-      let pageLoaded = false;
-      let durationReached = false;
-
-      // Function to hide loading screen
-      function hideLoadingScreen() {
-        if (loadingScreen) {
-          loadingScreen.classList.add('fade-out');
-          setTimeout(() => {
-            loadingScreen.style.display = 'none';
-          }, 300);
-        }
-      }
-
-      // Method to check if both conditions are met to hide loading screen
-      function checkHideLoading() {
-        if (pageLoaded && durationReached) {
-          hideLoadingScreen();
-        }
-      }
-
-      // Set timer for random duration
-      setTimeout(() => {
-        durationReached = true;
-        checkHideLoading();
-      }, randomDuration);
-
-      // Hide when page is fully loaded (but wait for minimum duration)
-      window.addEventListener('load', () => {
-        pageLoaded = true;
-        checkHideLoading();
-      });
-
-      // Fallback - hide after maximum time (12 seconds) no matter what
-      setTimeout(() => {
-        if (loadingScreen && loadingScreen.style.display !== 'none') {
-          hideLoadingScreen();
-        }
-      }, 12000); // Maximum 12 seconds fallback
-
-      /** =======================
-       * 1. Setup: DOM Elements
-       * ======================= */
-      const heroSection = document.querySelector('.hero');
-      const languageToggle = document.getElementById('language-toggle');
-      const heroVideoContainer = document.getElementById('hero-video');
-      const hamburger = document.querySelector('.hamburger');
-      const navLinks = document.querySelector('.nav-links');
-
-      /** ===========================
-       * 2. Hero Image Slideshow
-       * =========================== */
-      const heroImages = [
-        'images/flag.jpg', 'images/hero1.jpg', 'images/hero2.jpg',
-        'images/hero3.jpg', 'images/hero4.jpg', 'images/hero5.jpg',
-        'images/hero6.jpg', 'images/hero7.jpg', 'images/hero8.jpg',
-        'images/ضياء احمد اخليل.png', 'images/اخلاء مسؤولية.png'
-      ];
-
-      // Preload images
-      heroImages.forEach(src => {
-        const img = new Image();
-        img.src = src;
-      });
-
-      let currentIndex = 0;
-      function updateHeroBackground() {
-        if (!heroSection) return;
-
-        heroSection.style.transition = 'background-image 1s ease-in-out';
-        heroSection.style.backgroundImage = `url('${heroImages[currentIndex]}')`;
-        currentIndex = (currentIndex + 1) % heroImages.length;
-
-        const nextInterval = Math.floor(Math.random() * 5000) + 10000;
-        setTimeout(updateHeroBackground, nextInterval);
-      }
-      updateHeroBackground();
-
-      /** =======================
-       * 3. Translations Object
-       * ======================= */
-      const translations = {
-        en: {
-          "site-title": "Turathna", "home": "Home", "about": "About", "cuisine": "Cuisine",
-          "art": "Art", "embroidery": "Embroidery", "tools": "Tools", "buildings": "Buildings",
-          "history": "History", "festivals": "Festivals", "contact": "Contact", "oral": "Oral Narratives", "culture": "Culture",
-          "hero-title": "Discover Palestinian Cultural Heritage",
-          "hero-text": "Explore the rich traditions, art, cuisine, and history of Palestine through our comprehensive cultural archive.",
-          "learn-more": "Learn More", "featured": "Featured Cultural Aspects",
-          "cuisine-title": "Traditional Cuisine",
-          "cuisine-text": "Discover the flavors of Palestine with our traditional dishes like maqluba, musakhan, and kanafeh.",
-          "embroidery-title": "Tatreez Embroidery",
-          "embroidery-text": "Learn about the intricate art of Palestinian embroidery, a centuries-old tradition.",
-          "architecture-title": "Architecture",
-          "architecture-text": "Explore the unique architectural styles found in Palestinian cities and villages.",
-          "art-title": "Palestinian Art",
-          "art-text": "Experience the creativity of Palestinian painters, sculptors, and street artists who reflect identity and resistance through art.",
-          "tools-title": "Traditional Tools",
-          "tools-text": "Discover the agricultural and household tools used in traditional Palestinian daily life, farming, and craftsmanship.",
-          "history-title": "Palestinian History",
-          "history-text": "Learn about the rich and complex history of Palestine, from ancient civilizations to the modern era.",
-          "oral-title": "Palestinian Oral Narratives",
-          "oral-text": "Discover the power of storytelling in preserving Palestinian identity, traditions, and history.",
-          "festivals-title": "Cultural Festivals",
-          "festivals-text": "Celebrate Palestinian culture through vibrant festivals showcasing music, dance, food, and community spirit.",
-          "explore": "Explore →",
-          "project-credit": "Part of the Empowering Journalists in Digital Media to Promote and Safeguard Palestinian Cultural Heritage project, funded by Irish Aid.",
-
-          "disclaimer": "The video does not necessarily reflect the views of the donor.",
-          "copyright": "© 2025 Palestinian Cultural Heritage. All rights reserved."
-        },
-        ar: {
-          "site-title": "تراثنا", "home": "الرئيسية", "about": "من نحن", "cuisine": "المطبخ",
-          "art": "الفن", "embroidery": "التطريز", "tools": "الأدوات", "buildings": "المباني", "oral": "الروايات الشفوية", "culture": "التراث",
-          "history": "التاريخ", "festivals": "المهرجانات", "contact": "اتصل بنا",
-          "hero-title": "اكتشف التراث الثقافي الفلسطيني",
-          "hero-text": "استكشف التقاليد الغنية والفنون والمأكولات وتاريخ فلسطين من خلال أرشيفنا الثقافي الشامل.",
-          "learn-more": "معرفة المزيد", "featured": "الجوانب الثقافية البارزة",
-          "cuisine-title": "المأكولات التقليدية",
-          "cuisine-text": "اكتشف نكهات فلسطين مع أطباقنا التقليدية مثل المقلوبة، المسخن، والكنافة.",
-          "embroidery-title": "التطريز",
-          "embroidery-text": "تعرف على الفن المعقد للتطريز الفلسطيني، وهو تقليد عمره قرون.",
-          "architecture-title": "العمارة",
-          "architecture-text": "استكشف الأنماط المعمارية الفريدة الموجودة في المدن والقرى الفلسطينية.",
-          "art-title": "الفن الفلسطيني",
-          "art-text": "استكشف إبداع الفنانين الفلسطينيين من خلال الرسم والنحت وفن الشارع الذي يعبر عن الهوية والمقاومة.",
-          "tools-title": "الأدوات التقليدية",
-          "tools-text": "تعرف على الأدوات الزراعية والمنزلية المستخدمة في الحياة اليومية الفلسطينية التقليدية.",
-          "history-title": "التاريخ الفلسطيني",
-          "oral-title": "الروايات الشفوية الفلسطينية",
-          "oral-text": "اكتشف قوة السرد في الحفاظ على الهوية والتقاليد والتاريخ الفلسطيني.",
-          "history-text": "تعرف على التاريخ الغني والمعقد لفلسطين، من الحضارات القديمة إلى العصر الحديث.",
-          "festivals-title": "المهرجانات الثقافية",
-          "festivals-text": "احتفل بالثقافة الفلسطينية من خلال مهرجانات نابضة بالحياة تشمل الموسيقى والرقص والطعام وروح المجتمع.",
-          "explore": "استكشف →",
-          "project-credit": "جزء من مشروع تمكين الصحفيين في الإعلام الرقمي لتعزيز وحماية التراث الثقافي الفلسطيني، ممول من قبل Irish Aid.",
-
-          "disclaimer": "الفيديو لا يعكس بالضرورة وجهة نظر المتبرع.",
-          "copyright": "© 2025 التراث الثقافي الفلسطيني. جميع الحقوق محفوظة."
-        }
-      };
-
-      /** ===========================
-       * 4. Language Handling
-       * =========================== */
-      let currentLanguage = localStorage.getItem('language') || 'en';
-
-      function updateLanguage() {
-        document.querySelectorAll('[data-i18n]').forEach(el => {
-          const key = el.dataset.i18n;
-          el.textContent = translations[currentLanguage][key] || key;
-        });
-
-        document.documentElement.lang = currentLanguage;
-        document.documentElement.dir = currentLanguage === 'ar' ? 'rtl' : 'ltr';
-
-        if (languageToggle) {
-          const label = currentLanguage === 'en' ? 'العربية' : 'English';
-          languageToggle.querySelector('span').textContent = label;
-        }
-
-        localStorage.setItem('language', currentLanguage);
-        updateHeroVideo();
-      }
-
-      if (languageToggle) {
-        languageToggle.addEventListener('click', () => {
-          currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
-          updateLanguage();
-        });
-      }
-
-      updateLanguage(); // Initial call
-
-      /** ===============================
-       * 5. Hero YouTube Video Embed
-       * =============================== */
-      function updateHeroVideo() {
-        if (!heroVideoContainer) return;
-
-        const arabicVideoId = '_kKBeVCdwQE';
-        const englishVideoId = 'MJOs9RrGQzw';
-        const videoId = currentLanguage === 'ar' ? arabicVideoId : englishVideoId;
-
-        const iframe = `
-      <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/${videoId}?si=YfzZoQz8GD80Xb-g"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-      </iframe>
-    `;
-        heroVideoContainer.innerHTML = iframe;
-      }
-
-      /** ===============================
-       * 6. Mobile Navigation Toggle
-       * =============================== */
-      if (hamburger && navLinks) {
-        hamburger.addEventListener('click', () => {
-          navLinks.classList.toggle('active');
-          const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
-          hamburger.setAttribute('aria-expanded', String(!isExpanded));
-        });
-      }
-    });
-  </script>
-
+  <script src="js/indexScript.js"></script>
 
 </body>
 
