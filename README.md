@@ -46,3 +46,4 @@ For inquiries, contributions, or collaboration opportunities, please reach out v
 
 # Demo
 https://dieaikhlayel.github.io/Palestinian-Cultural-Heritage/
+
