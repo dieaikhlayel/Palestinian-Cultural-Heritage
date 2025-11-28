@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const translations = {
     en: {
-      "site-title": "Turathna",
+  "site-title": "Turathna",
       "home": "Home",
       "about": "About",
       "cuisine": "Cuisine",
@@ -116,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "heritage": "Heritage",
       "geography": "Geography",
       "facts": "Facts",
+		"icons": "Cultural Icons",
 
       "historyTitle": "Palestinian History",
       "historySubtitle": "A land of ancient civilizations and enduring culture",
@@ -169,6 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "contact": "اتصل بنا",
       "oral": "الروايات الشفوية",
       "facts": "حقائق",
+	   "icons": "الرموز الثقافية",
 
       "historyTitle": "التاريخ الفلسطيني",
       "historySubtitle": "أرض الحضارات القديمة والثقافة الدائمة",

@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ============================
   const translations = {
     en: {
-      "site-title": "Turathna",
+     "site-title": "Turathna",
       "home": "Home",
       "about": "About",
       "cuisine": "Cuisine",
@@ -87,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "heritage": "Heritage",
       "geography": "Geography",
       "facts": "Facts",
+		"icons": "Cultural Icons",
       
       "about-title": "About Palestinian Cultural Heritage",
       "about-subtitle": "Preserving and celebrating the rich cultural identity of Palestine",
@@ -113,13 +114,23 @@ document.addEventListener('DOMContentLoaded', () => {
     },
 
     ar: {
-      "site-title": "تراثنا",
-      "home": "الرئيسية", "about": "من نحن", "cuisine": "المطبخ", "art": "الفن",
-      "embroidery": "التطريز", "tools": "الأدوات", "buildings": "المباني",
-      "history": "التاريخ", "festivals": "المهرجانات", "oral": "الروايات الشفوية",
-      "heritage": "التراث", "culture": "الثقافة", "geography": "الجغرافيا",
-      "facts": "حقائق",
+               "site-title": "تراثنا",
+      "home": "الرئيسية",
+      "about": "من نحن",
+      "cuisine": "المطبخ",
+      "art": "الفن",
+      "embroidery": "التطريز",
+      "tools": "الأدوات",
+      "buildings": "المباني",
+      "history": "التاريخ",
+      "festivals": "المهرجانات",
       "contact": "اتصل بنا",
+      "oral": "الروايات الشفوية",
+      "culture": "الثقافة",
+      "heritage": "التراث",
+      "geography": "الجغرافيا",
+      "facts": "حقائق",
+	  "icons": "الرموز الثقافية",
 
       "about-title": "حول التراث الثقافي الفلسطيني",
       "about-subtitle": "الحفاظ على الهوية الثقافية الغنية لفلسطين والاحتفال بها",

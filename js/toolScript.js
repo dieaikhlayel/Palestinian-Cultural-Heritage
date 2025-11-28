@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ====================================== */
   const translations = {
     en: {
-      "site-title": "Turathna",
+           "site-title": "Turathna",
       "home": "Home",
       "about": "About",
       "cuisine": "Cuisine",
@@ -92,6 +92,8 @@ document.addEventListener('DOMContentLoaded', () => {
       "heritage": "Heritage",
       "geography": "Geography",
       "facts": "Facts",
+		"icons": "Cultural Icons",
+		
 
       "tools-title": "Traditional Palestinian Tools",
       "tools-subtitle": "Artifacts of daily life and craftsmanship from Palestine's past",
@@ -138,6 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "heritage": "التراث",
       "culture": "الثقافة",
       "facts": "حقائق",
+	   "icons": "الرموز الثقافية",
 
       "tools-title": "الأدوات الفلسطينية التقليدية",
       "tools-subtitle": "قطع من الحياة اليومية والحرف اليدوية من ماضي فلسطين",

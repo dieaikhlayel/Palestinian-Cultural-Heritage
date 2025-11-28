@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // === Translation System ===
 const translations = {
   en: {
-    "site-title": "Turathna",
+     "site-title": "Turathna",
       "home": "Home",
       "about": "About",
       "cuisine": "Cuisine",
@@ -81,6 +81,7 @@ const translations = {
       "heritage": "Heritage",
       "geography": "Geography",
       "facts": "Facts",
+		"icons": "Cultural Icons",
 
     "festivals-title": "Palestinian Festivals",
     "festivals-subtitle": "Celebrations of harvest, heritage, and community",
@@ -135,6 +136,7 @@ const translations = {
     "oral": "الروايات الشفوية",
     "contact": "اتصل بنا",
     "facts": "حقائق",
+	 "icons": "الرموز الثقافية",
 
     "festivals-title": "المهرجانات الفلسطينية",
     "festivals-subtitle": "احتفالات الحصاد والتراث والمجتمع",

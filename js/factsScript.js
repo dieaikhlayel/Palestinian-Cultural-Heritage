@@ -91,22 +91,23 @@ document.addEventListener('DOMContentLoaded', () => {
      * ========================================================== */
     const translations = {
         en: {
-          "site-title": "Turathna",
-          "home": "Home",
-          "about": "About",
-          "cuisine": "Cuisine",
-          "art": "Art",
-          "embroidery": "Embroidery",
-          "tools": "Tools",
-          "buildings": "Buildings",
-          "oral": "Oral Narratives",
-          "history": "History",
-          "festivals": "Festivals",
-          "heritage": "Heritage",
-          "culture": "Culture",
-          "contact": "Contact",
-          "geography": "Geography",
-          "facts": "Facts",
+                 "site-title": "Turathna",
+      "home": "Home",
+      "about": "About",
+      "cuisine": "Cuisine",
+      "art": "Art",
+      "embroidery": "Embroidery",
+      "tools": "Tools",
+      "buildings": "Buildings",
+      "history": "History",
+      "festivals": "Festivals",
+      "contact": "Contact",
+      "oral": "Oral Narratives",
+      "culture": "Culture",
+      "heritage": "Heritage",
+      "geography": "Geography",
+      "facts": "Facts",
+		"icons": "Cultural Icons",
       
           /* --- Facts Page --- */
           "facts-hero-title": "Interesting Facts About Palestine",
@@ -166,6 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
           "contact": "اتصل بنا",
           "geography": "الجغرافيا",
           "facts": "حقائق",
+		    "icons": "الرموز الثقافية",
       
           /* --- Facts Page --- */
           "facts-hero-title": "حقائق مدهشة عن فلسطين",

@@ -100,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "heritage": "Heritage",
       "geography": "Geography",
       "facts": "Facts",
+		"icons": "Cultural Icons",
   
       // Hero Section
       "hero-title": "Discover Palestinian Cultural Heritage",
@@ -136,6 +137,10 @@ document.addEventListener('DOMContentLoaded', () => {
   
       "festivals-title": "Cultural Festivals",
       "festivals-text": "Celebrate Palestinian culture through festivals.",
+	  
+	  "icons": "Cultural Icons",
+"icons-hero-text": "Explore the national symbols, heritage figures, and cultural icons of Palestine.",
+
   
       // Footer
       "project-credit": "Part of the Empowering Journalists project, funded by Irish Aid.",
@@ -161,6 +166,8 @@ document.addEventListener('DOMContentLoaded', () => {
       "heritage": "التراث",
       "geography": "الجغرافيا",
       "facts": "حقائق",
+	  "icons": "الرموز الثقافية",
+	  
   
       // Hero Section
       "hero-title": "اكتشف التراث الثقافي الفلسطيني",
@@ -197,6 +204,10 @@ document.addEventListener('DOMContentLoaded', () => {
   
       "festivals-title": "المهرجانات الثقافية",
       "festivals-text": "احتفال بالثقافة الفلسطينية.",
+	  
+	  "icons": "الرموز الثقافية",
+"icons-hero-text": "استكشف الرموز الوطنية والشخصيات التراثية والرموز الثقافية في فلسطين.",
+
   
       // Footer
       "project-credit": "جزء من مشروع ممول من Irish Aid.",

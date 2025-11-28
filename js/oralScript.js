@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
    * ========================================================== */
   const translations = {
     en: {
-      "site-title": "Turathna",
+           "site-title": "Turathna",
       "home": "Home",
       "about": "About",
       "cuisine": "Cuisine",
@@ -121,6 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "heritage": "Heritage",
       "geography": "Geography",
       "facts": "Facts",
+		"icons": "Cultural Icons",
 
       "featured": "Featured Oral Narratives",
       "hero-title": "Discover Palestinian Oral Narratives",
@@ -174,6 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "contact": "اتصل بنا",
       "oral": "الروايات الشفوية",
       "facts": "حقائق",
+	   "icons": "الرموز الثقافية",
 
       "featured": "الروايات الشفوية المميزة",
       "hero-title": "اكتشف الروايات الشفوية الفلسطينية",

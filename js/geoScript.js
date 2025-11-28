@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
    * ========================================================== */
   const translations = {
     en: {
-      "site-title": "Turathna",
+  "site-title": "Turathna",
       "home": "Home",
       "about": "About",
       "cuisine": "Cuisine",
@@ -111,6 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "heritage": "Heritage",
       "geography": "Geography",
       "facts": "Facts",
+		"icons": "Cultural Icons",
 
       "geo-hero-title": "Palestinian Geography",
       "geo-hero-text": "Explore the mountains, plains, valleys, and landscapes that shape Palestine.",
@@ -157,6 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "contact": "اتصل بنا",
       "geography": "الجغرافيا",
       "facts": "حقائق",
+	   "icons": "الرموز الثقافية",
 
       "geo-hero-title": "جغرافية فلسطين",
       "geo-hero-text": "استكشف الجبال والسهول والوديان والمناظر الطبيعية المتنوعة في فلسطين.",

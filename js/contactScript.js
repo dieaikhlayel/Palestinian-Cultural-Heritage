@@ -68,7 +68,7 @@ updateHeroBackground();
 // =========================
 const translations = {
   en: {
-    "site-title": "Turathna",
+      "site-title": "Turathna",
       "home": "Home",
       "about": "About",
       "cuisine": "Cuisine",
@@ -84,6 +84,7 @@ const translations = {
       "heritage": "Heritage",
       "geography": "Geography",
       "facts": "Facts",
+		"icons": "Cultural Icons",
       
     "contact-title": "Contact Us",
     "contact-subtitle": "Get in touch with the Palestinian Cultural Heritage team",
@@ -105,11 +106,24 @@ const translations = {
   },
 
   ar: {
-    "site-title": "تراثنا", "home": "الرئيسية", "about": "من نحن", "cuisine": "المطبخ",
-    "art": "الفن", "embroidery": "التطريز", "tools": "الأدوات", "buildings": "المباني",
-    "history": "التاريخ", "culture": "الثقافة", "geography": "الجغرافيا",
-    "facts": "حقائق",
-    "festivals": "المهرجانات", "contact": "اتصل بنا",
+              "site-title": "تراثنا",
+      "home": "الرئيسية",
+      "about": "من نحن",
+      "cuisine": "المطبخ",
+      "art": "الفن",
+      "embroidery": "التطريز",
+      "tools": "الأدوات",
+      "buildings": "المباني",
+      "history": "التاريخ",
+      "festivals": "المهرجانات",
+      "contact": "اتصل بنا",
+      "oral": "الروايات الشفوية",
+      "culture": "الثقافة",
+      "heritage": "التراث",
+      "geography": "الجغرافيا",
+      "facts": "حقائق",
+	  "icons": "الرموز الثقافية",
+	  
     "contact-title": "اتصل بنا",
     "contact-subtitle": "تواصل مع فريق التراث الثقافي الفلسطيني",
     "form-title": "أرسل لنا رسالة",
